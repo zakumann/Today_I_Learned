@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- z-index : z축의 높이를 조정한다. 
+    (기본) z-index: 0 
+    (큰 수) 위로 ->  (작은수) 아래로 
+    3차원 position: absolut, fixed, relative -->
+    <style>
+        .box1{
+            width:100px;
+            height:300px;
+            background-color: aquamarine;
+            position:absolute;
+            z-index: 10;
+        }
+        .box2{
+            width:200px;
+            height: 100px;
+            background-color: red;
+            position: absolute;
+            /* top:308px; */
+            /* z-index: -999; */
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+</body>
+</html>

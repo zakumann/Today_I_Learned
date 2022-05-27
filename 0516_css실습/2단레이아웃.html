@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            margin:0 auto;
+            padding:0;
+        }
+        #header{
+            width:100%;
+            height:100px;
+            background-color: brown;
+        }
+        #sidebar-left{
+            width:200px;
+            height: 500px;
+            background-color: aquamarine;
+            float:left;
+        }
+        #sidebar{
+            width:200px;
+            height: 500px;
+            background-color: aquamarine;
+            float:right;
+        }
+        #contents{
+            width:800px;
+            height:500px;
+            background-color: blue;
+            float:left;
+        }
+        .clearfix{ 
+            clear:both;
+        }
+        #footer{
+            width:100%;
+            height:100px;
+            background-color: brown;
+        }
+    </style>
+</head>
+<body id="container">
+    <header id="header">
+        <h1>사이트 제목</h1>
+    </header>
+    <aside id="sidebar-left">
+        <h2>사이드 바</h2>
+        <ul>
+            <li>사이드1</li>
+            <li>사이드1</li>
+            <li>사이드1</li>
+        </ul>
+    </aside>
+    <section id="contents">
+        <h2>본문</h2>
+        <p>대통령은 제3항과 제4항의 사유를 지체없이 공포하여야 한다. 재산권의 행사는 공공복리에 적합하도록 하여야 한다. 선거운동은 각급 선거관리위원회의 관리하에 법률이 정하는 범위안에서 하되, 균등한 기회가 보장되어야 한다.</p>
+    </section>
+    <aside id="sidebar">
+        <h2>사이드 바</h2>
+        <ul>
+            <li>사이드1</li>
+            <li>사이드1</li>
+            <li>사이드1</li>
+        </ul>
+    </aside>
+    <div class="clearfix"></div>
+    <footer id="footer">
+        <h2>푸터</h2>
+        <p>푸터 내용 &copy;</p>
+    </footer>
+</body>
+</html>

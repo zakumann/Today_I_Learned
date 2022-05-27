@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{width:100%;}
+        .left{            
+            width: 300px;
+            height:300px;   
+            background-color: antiquewhite;
+            float:left;
+            /* overflow: hidden;  */
+            overflow-x: scroll;
+            overflow-y: scroll;
+        }
+        .left-2{            
+            width: 100px;
+            height:300px;   
+            background-color: blue;
+            float:left;
+        }
+        .right{
+            width: 300px;
+            height:300px;   
+            background-color: red;
+            float:right;
+        }
+        .right-2{
+            width: 100px;
+            height:300px;   
+            background-color: green;
+            float:right;
+        }
+        .clearfix{
+            clear:both; /* float 사용/해제를 명확히 표시->빠른 코드 파악*/
+        }
+        footer{
+            width:100%;
+            height: 100px;
+            background-color: black;
+            /*clear:both;*/ /* clear: left | right | both */
+        }
+    </style>
+</head>
+<body>
+    <div class="left">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure mollitia fugiat ullam minus fugit, beatae ea quibusdam labore molestias consequatur cupiditate fuga animi, deserunt, tempora possimus nihil cumque ipsa.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure mollitia fugiat ullam minus fugit, beatae ea quibusdam labore molestias consequatur cupiditate fuga animi, deserunt, tempora possimus nihil cumque ipsa.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure mollitia fugiat ullam minus fugit, beatae ea quibusdam labore molestias consequatur cupiditate fuga animi, deserunt, tempora possimus nihil cumque ipsa.
+    </div>
+    <div class="left-2"></div>
+    <div class="right-2"></div>
+    <div class="right"></div>
+    <div class="clearfix"></div>
+    <footer></footer>
+</body>
+</html>

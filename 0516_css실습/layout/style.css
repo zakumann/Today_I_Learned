@@ -1,0 +1,145 @@
+@charset "utf-8";
+
+html, body{
+    margin:0;
+    padding:0;
+}
+ul{
+    list-style: none;
+}
+
+a{
+    /* color:#FFF; */
+    text-decoration: none;
+}
+.menu ul li a{
+    color:#FFF;
+}
+
+.menu ul li a:before{
+    content: '☆';
+}
+.menu ul li a:after{
+    content: " |";
+}
+
+/* 마지막 속성에 | 제거 */
+.menu li:last-child :after{
+    content:"";
+}
+
+.menu li{
+    /* display: inline-block; */ /*메뉴 사이 공백 생김 */
+    float:left;
+    width: 150px;
+    /* height: 50px; */
+    /* background-color: blue;   */
+    text-align: center;
+    /* line-height: 50px; */
+    padding-top: 15px;
+    padding-bottom:15px;
+    /* border:1px solid red; */
+    border-top: 1px solid yellowgreen;
+    /* 
+    border-right: 1px solid red;
+    border-bottom: 1px solid red;     */
+}
+/* .menu li:nth-child(1){ */
+    /* .menu li:first-child{ 
+     border-left:1px solid red;
+} */
+.menu li:hover{
+    border-top: 1px solid red;
+    background-color: rgba(255,255,255,0.3);
+}
+.menu ul{
+    background-color: yellowgreen;
+    overflow: hidden;
+}
+.menu li a{
+    display: block;
+}
+.menu li a:hover{
+    color:red;
+}
+
+/* menu2에 대한 style */
+.lists li img{
+    border-radius: 20px;
+    margin-right:10px;
+}
+.lists li .info{
+    display: inline-block;
+}
+
+.lists li .info h3{
+    color:rgb(20, 20, 20);
+    font-size: 16px;
+    margin:0;
+}
+.lists li .info span{
+    color:rgb(122, 121, 121);
+    font-size:14px;
+}
+
+.lists li img, 
+.lists li .info{
+    vertical-align: middle;
+}
+
+/* li 전체에 링크걸기 */
+.lists li a{
+    display: block;
+}
+
+.lists li{
+    margin-bottom: 20px;
+}
+
+/* menu3 - 리빙 뉴스 */
+.living-lists li{
+    width:750px;
+    /* background-color:aquamarine; */
+}
+
+.living-lists .image-link,
+.living-lists .info-link{
+    display: inline-block;
+    vertical-align: middle;
+}
+.living-lists .info-link{
+    width: 512px;
+}
+
+.living-lists .image-link{
+    margin-right:21px;
+}
+.living-lists .living-info h3{
+    margin:0;
+}
+.date-wrap span{
+    font-size:14px;
+}
+.living-info span{
+    color:#c08d31;
+}
+
+/*title-wrap*/
+.title-wrap{
+    border-top: solid 2px black;
+    border-bottom: solid 2px black;
+    /* padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left:15px; */
+    padding: 20px 20px 20px 15px;
+}
+.title-wrap h3{
+    /* background-color: green; */
+    margin-bottom: 20px;
+}
+
+.title-wrap .btn-wrap{
+	display: flex;
+	justify-content: space-between;
+}

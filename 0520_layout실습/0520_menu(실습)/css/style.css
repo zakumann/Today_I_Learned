@@ -1,0 +1,112 @@
+@charset "utf-8";
+
+*{
+    border:none;
+    margin:0;
+    padding:0;
+}
+ul, ol, li{
+    list-style: none;
+}
+a{
+    color: #000;
+    text-decoration: none;
+}
+button{
+    cursor:pointer;
+}
+
+header{
+    position: relative;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    height:69px;
+}
+
+header h1{
+    position: absolute;
+    top:0;
+    left:0;
+    padding-left:26px
+}
+header h1 a{
+    display: block;
+    width:99px;
+    height: 69px;
+    background: url("https://via.placeholder.com/99x69") no-repeat center;
+}
+header .util{
+    position: absolute;
+    right:0;
+    top:0;
+}
+
+header .util a{
+    display: inline-block;
+    position: relative;
+    padding: 0 18px;
+    line-height: 69px;
+    font-size:18px;
+    color: #000;
+}
+
+header nav ul{
+    width:1000px;
+    overflow:hidden;
+    text-align: center;
+    padding-left: 200px;
+
+}
+header nav ul li{
+    display:inline-block;
+    float:left;
+    width:25%;
+}
+header nav ul li a{
+    display:block;
+    padding: 0 47.5px;
+    line-height: 69px;
+    font-size: 18px;
+    color:#000;
+}
+header .util a ~a:before{
+    content:"";
+    position: absolute;
+    left:0;
+    top:50%;
+    transform:translateY(-50%);
+    width:1px;
+    height:9px;
+    background-color: #ddd;
+}
+header .util button{
+    width:60px;
+    height: 69px;
+    background-color: #043285;
+    color: #fff;
+    margin-right: 26px;
+}
+
+.submenu li{
+    line-height: 50px;
+    background-color: #94a9ff;
+}
+.submenu{
+    height: 0; /*서브메뉴가 보이지 않도록 높이를 0으로 처리*/
+    overflow: hidden;
+}
+nav ul li:hover{
+    background-color: #94a9ff;
+    transition-duration: 0.5s;
+}
+nav ul li:hover .submenu{
+    height:250px;
+    transition-duration: 1s;
+}
+section{
+    clear:both;
+    height: 500px;
+    padding-top: 30px;
+    text-align:center;
+    /* border:1px solid red; */
+}

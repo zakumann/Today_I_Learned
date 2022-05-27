@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{width:100px; height:100px;
+            bordER: 1px solid black; margin: 50px;}
+        #box{background-color: blue;
+            /*animation-name: change-bg;
+            animation-duration: 3s;
+            animation-iteration-count: 3;
+            animation-direction:alternate;
+            animation-timing-function: ease-in-out;*/
+
+            animation: change-bg 3s 1s infinite alternate ease-in-out;
+        }
+        @keyframes change-bg{
+            from{background-color: blue;}/*0%*/
+            50%{background-color: violet;}
+            to{background-color: yellow;
+                border-radius: 50%;}/*100%*/
+        }
+    </style>
+</head>
+<body>
+    <div id="box"></div>
+</body>
+</html>

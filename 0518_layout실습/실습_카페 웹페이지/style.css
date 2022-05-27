@@ -1,0 +1,200 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'HallymMjo-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2204@1.0/HallymMjo-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+margin:0;
+padding:0;
+}
+body {
+		width: 1200px;
+		margin: 0 auto;
+		border: 1px solid #ccc;
+		background: #fff;
+		font-family: 'HallymMjo-Regular', serif;
+	}
+a {
+	text-decoration: none;
+    display:block;
+}
+/* 폰트 크기: 1em == 16px */
+h1 { 
+	font-size: 1.8em;  /*28.8px*/
+}
+h2 {
+	font-size: 1.3em;/*20.8px*/
+}
+p {
+	font-size: 1.3em;
+	line-height: 2.5;
+}
+li {
+	font-size: 1em;
+	line-height: 2;
+}
+
+/* header , nav 만들기  */
+/* 배경 이미지 깔기*/
+header {
+	width: 100%;
+	height: 500px;
+	background: url("./images/header.jpg") center no-repeat; 
+	background-size: cover;
+}
+
+nav {
+	height: 50px;
+	background: #000;
+}
+#main-nav {
+	padding: 5px;
+	text-align:center;
+}
+#main-nav li {
+	display: inline-block;		
+	color: #fff;
+	/* font-family: "맑은 고딕", 돋움; */
+	font-size: 1em;
+	margin: 5px 40px;
+	/* background-color: aqua; */
+}		
+
+/* a태그 속성 사용시 link(방문전) visited(방문후) hover(마우스오버) active(클릭중)
+ 순서로 작성해야 스타일 적용됨  */
+nav a:link,
+ a:visited,
+#top a:link,
+#top a:visited {
+	color: rgb(255, 253, 253);
+    display:block;
+}
+nav a:hover{
+	color:#d4f7e5;
+}
+nav a:active {
+	color: red;
+}
+
+/* 본문 section 영역  */
+/* 부모가 relative이면  */
+section {
+	position: relative;
+	width: 100%;
+	padding: 15px 5% 10px 5%;
+	/* border: 1px solid red; */
+}
+		
+section:nth-child(odd) {
+	background: #eee;
+}
+
+.page-title {
+	position: absolute;  /*이거 적용하면 top 사용가능한데 위치 기준은 브라우저다. 부모에 relative쓰면 부모 기준으로 top지정 가능 */
+	top: 20px;
+	left: 0;
+	padding: 30px 50px;
+	
+}
+
+#intro, #map, #choice {
+	/* -moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box; */
+	box-sizing: border-box;
+	width: 100%;
+	height: 420px;
+  }
+
+
+#intro .content,
+#map .content,
+#choice .content{
+	width:90%;	
+	position: absolute;  /*어차피 section에 relative 있으니까 margin 대신 top으로 처리*/
+	/*margin-top: 100px; */ /*제목하고 사이 */
+	top:130px;
+	/* padding: 20px auto; */
+	display:flex;	
+	flex-wrap:nowrap;
+	justify-content: space-evenly;
+	align-items: center;
+	/* border:1px solid green; */
+}
+
+#intro .content,
+#map .content{
+	flex-direction: row;
+}
+#choice .content{
+	flex-direction: row-reverse;
+}
+
+#choice .photo {
+	margin-right: 5%;
+	/* border:1px solid green; */
+}
+
+#choice img{	
+	border:1px solid white;
+	border-radius:50%;
+}
+#choice .content ol {
+	margin-top: 20px;
+	text-align: justify; /*양쪽 정렬 */
+}
+
+
+.photo img {	
+	max-width: 320px;
+	height: auto;
+}
+.text {
+	width: 40%;
+}
+
+footer {
+	/* position: relative; */
+	width: 100%;
+	height: 100px;
+	background: #000;
+}		
+footer p {
+	/* font-size: 1.3em; */
+	line-height: 100px;  /*위에 height가 100이니깐 line-height도 100주면 자동 middle 정렬 */
+	color: white;
+	text-align: center;
+	/* border:1px solid green;  */
+}
+
+#top {
+	position: fixed;
+	bottom:100px;
+	/* top:100px; */
+	right:12%;
+}
+.btn-blue {
+	padding: 4px 8px;
+	border-radius: 50%;
+	color: #fff;
+	background-color:rgb(25, 26, 27); 
+	border: 1px solid 	rgb(245, 246, 249);
+}
+
+#top{
+    position:fixed;
+    bottom: 10px;
+    right:12%;
+}
+
+.btn-blue{
+    border-radius: 50%;
+    color: #fff;
+    background-color: #000;
+    border: 1px solid #fff;
+    width: 35px;
+    height: 35px;
+}

@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+html, body{
+    margin:0;
+    padding:0;
+}
+ul{
+    list-style: none;
+}
+
+a{
+    color:#FFF;
+    text-decoration: none;
+}
+
+a:before{
+    content: '☆';
+}
+a:after{
+    content: " |";
+}
+
+/* 마지막 속성에 | 제거 */
+.menu li:last-child :after{
+    content:"";
+}
+
+.menu li{
+    /* display: inline-block; */ /*메뉴 사이 공백 생김 */
+    float:left;
+    width: 150px;
+    /* height: 50px; */
+    background-color: blue;  
+    text-align: center;
+    /* line-height: 50px; */
+    padding-top: 15px;
+    padding-bottom:15px;
+    border:1px solid red;  
+}
+.menu ul{
+    background-color: yellowgreen;
+    overflow: hidden;
+}
+.menu li a{
+    display: block;
+}
+.menu li a:hover{
+    color:red;
+}
+

@@ -1,0 +1,293 @@
+@charset "utf-8";
+*{
+    margin:0;
+    padding:0;
+    text-decoration: none;
+    list-style: none;
+}
+#shop-body{
+    background-color: #e9ecef;
+}
+.shop-container{
+    width:1300px;
+    margin:0 auto;
+}
+/* 상단  gnb 영역  */
+#shop-header #shop-header-gnb{
+    width: 100%;
+    height:36px;
+    background-color: #03c75a;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+#shop-header #shop-header-middle{
+    width:100%;
+    height:66px;
+    background-color: #03c75a;
+}
+#shop-header nav{
+    width:100%;
+    border-top:solid 1px #e8e8e8;
+    border-bottom: solid 1px #e8e8e8;
+    background-color: #fff;
+}
+/* nav 메뉴를 가로로 정렬 */
+#shop-header nav ul{
+    display:flex;
+    flex-wrap:wrap;
+    align-items: center;
+    padding: 13px 0 8px 0;
+}
+#shop-header nav ul li{
+    margin-right: 16px;
+}
+
+/* list-item box 생성 */
+#shop-main .list-item{
+    width:308px;
+    height:496px;
+    background-color:#03c75a;
+    margin-bottom:20px;
+    position:relative; /*3번째 박스 absolute 배치를 위해 지정*/
+}
+/* list-item 정렬 */
+#shop-main .list-wrap{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+}
+/* 카테고리의 테두리 만들기 */
+.shop-border{
+    border: solid 1px #ced2d7;
+}
+/****** 첫 번째 박스 : 왼쪽 ******/
+/* 첫 번째 박스 정렬 : float */
+#shop-main .list-item .category-wrap{
+    overflow: hidden;
+}
+#shop-main .list-item .category-wrap .category-left{
+    width:124px;
+    height: 493px;
+    float: left;
+    border: 1px solid #333949;
+    background-color: #333949;
+}
+/* category-left : 글씨 */
+#shop-main .list-item .category-wrap .category-left h3{
+    color: rgba(255, 255, 255, 0.46);
+    padding: 14px 0 14px 13px;
+    border-bottom: 1px solid #2b313f;
+    font-size: 13px;
+}
+#shop-main .list-item .category-wrap .category-left a{
+    display: block;  /*영역에서도 링크사용*/
+    color:rgba(255, 255, 255, 0.46);
+    font-size: 13px;
+    padding: 7px 8px;
+    font-weight: 700; /* 100 ~ 900*/
+}
+/****** 첫 번째 박스 : 오른쪽 ******/
+#shop-main .list-item .category-wrap .category-right{
+    width:182px;
+    height:100%;
+    float:right;
+    background-color: #fff;
+}
+/* 오른쪽 - 위 박스*/
+#shop-main .list-item .category-wrap .category-right .category-right-top{
+    width:100%;
+    height:306px;
+    border-bottom: solid 1px #e7e7e7;
+}
+
+#shop-main .list-item .category-right-top .category-info,
+#shop-main .list-item .category-right-bottom{
+    padding:20px 0;
+    text-align: center;
+}
+#shop-main .list-item .category-right-top .category-info h3{
+    font-size:16px;
+}
+#shop-main .list-item .category-right-top .category-info .price{
+    font-size:15px;
+    color:skyblue;
+}
+#shop-main .list-item .category-right-top .category-info .headline,
+#shop-main .list-item .category-right-bottom .headline{
+    font-size: 12px;
+    border:solid 1px #00ab33;
+    color: #00ab33;
+    display:inline-block; /*속성변경 : span은 inline 속성이라 margin, height, width 못가짐*/
+    margin-bottom: 7px;
+}
+/*오른쪽 - 위 박스 image 영역*/
+#shop-main .list-item .category-right-top .image-wrap{
+    text-align: center;
+}
+
+/*오른쪽 - 아래 박스 image 영역*/
+#shop-main .list-item .category-right-bottom .tag{
+    background-color: #e8eef4;
+    color:#666;
+    font-size: 12px;
+    display: inline-block;
+    padding: 0 5px;
+    margin: 6px 1px 0 1px;
+    width: auto;
+    max-width: 110px;
+    height: 26px;
+    line-height: 26px;
+    vertical-align: top;
+}
+
+
+/****** 두 번째 박스 : 이미지 채우기 ******/
+.w-100{
+    width:100%;
+}
+.h-100{
+    height:100%;
+}
+#shop-main .list-item .banner img{
+    width: 100%;
+    height:100%;
+}
+
+/****** 세 번째 박스 : 공간 분할 ******/
+#shop-main .list-item .list-half{
+    width: 100%;
+    height: 240px;
+    background-color: #fff;
+}
+/*상하 박스 배치 - #shop-main .list-item (부모)에서 position:relation 지정함*/
+#shop-main .list-item .list-half .list-half-top{
+    position: absolute;
+    left:0;
+    top:0;
+    background-color: #fff;
+}
+#shop-main .list-item .list-half .list-half-bottom{
+    position: absolute;
+    left:0;
+    bottom:0;
+    background-color: #fff;
+}
+
+#shop-main .list-item .list-half .list-half-header{
+    width:100%;
+    height:62px;
+    background-color: #fff;
+    text-align: center;
+    padding-top: 10px;
+    border-bottom: 1px solid #e7e7e7;
+    position: relative;
+}
+
+#shop-main .list-item .list-half .list-half-header .half-over-lay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#shop-main .list-item .list-half .list-half-bg{
+    padding-top:0;
+    border-bottom: solid 1px #fff;
+    background-color: green;
+}
+#shop-main .list-item .list-half .list-half-bg .shop-title-border{
+    position:relative;
+    top:50%;
+    transform: translateY(-50%); /*세로 가운데 텍스트 정렬*/
+    padding: 2px 4px;
+    color: #fff;
+    border: solid 1px #fff;
+    display:inline-block;
+}
+
+#shop-main .list-item .list-half .list-half-header .headline{
+    border: solid 1px #000;
+    padding: 2px 4px;
+    display:inline-block;
+}
+
+#shop-main .list-item .list-half .list-half-header h3{
+    font-size:14px;
+}
+
+/*상단 content-lists 설정 */
+#shop-main .list-item .list-half .content-lists{
+    overflow:hidden;
+    height: 177px;
+}
+
+/* content-list : 3개 일때 */
+#shop-main .list-item .list-half .content-lists-3 li{
+    float:left;
+    width:33%;
+    height:100%;
+    border-right: 1px solid #f0f0f0;
+    text-align:center;
+}
+#shop-main .list-item .list-half .content-lists-3 li:last-child{
+    border-right: none;
+}
+#shop-main .list-item .list-half .content-lists-3 li img{
+    width:100%;
+    height:100px;
+    margin-bottom:5px;
+}
+#shop-main .list-item .list-half .content-lists.content-lists-3 li h3{
+    font-size:13px;
+    margin-bottom: 5px;
+}
+#shop-main .list-item .list-half .content-lists.content-lists-3 li span{
+    font-size:12px;
+}
+
+/*content-list : 2개 일때 */
+#shop-main .list-item .list-half .content-lists-2{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    padding-top: 11px;
+}
+#shop-main .list-item .list-half .content-lists-2 li{
+    width:130px;
+    height:150px;
+    margin-right:8px;
+}
+#shop-main .list-item .list-half .content-lists-2 li:last-child{
+    margin-right:none;
+}
+
+#shop-main .list-item .list-half .content-lists-2 .content-image-wrap{
+    position:relative;
+    width:130px;
+    height:90px;
+}
+#shop-main .list-item .list-half .content-lists-2 .content-image-wrap .discount{
+    position: absolute;
+    display:block;
+    width:42px;
+    height: 42px;
+    border-radius: 50%;
+    font-size:14px;
+    text-align: center;
+    background-color: orange;
+    color: #fff;
+    top: 6px;
+    right:5px;
+}
+#shop-main .list-item .list-half .content-lists-2 li h3{
+    font-size:13px;
+}
+#shop-main .list-item .list-half .content-lists-2 li .price{
+    color:#62a7ee;
+    font-size:12px;
+}
+#shop-main .list-item .list-half .content-lists-2 li .price em{
+    font-size:14px;
+    font-weight:700;
+    font-style:normal;
+}            

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- 주석 단축키: ctrl + / -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>absolute</title>
+    <style>
+        .box1{
+            width:300px;
+            height:300px;
+            background-color: palegreen;
+        }
+        .parent-absolute{
+            width: 300px;
+            height:300px;
+            background-color: antiquewhite;
+            position: relative;
+            /* 좌표(top) 사용실 이동 기준을
+            브라우저 -> 원 위치
+            바꾸고 싶을 때
+            부모요소에 position: relative로 만든다*/
+        }
+        .child-absolute{
+            position:absolute; 
+            width: 100px;
+            height:100px;
+            background-color: blueviolet;
+            /* margin-top: 100px;*/
+            bottom:0;
+
+        }
+    </style>
+</head>
+<!-- position: absolute
+    - 
+    
+    [3가지 체크사항]
+    1) 부모 자식 간 마진 병합? (발생하지 않음)
+    2) top, right, bottom, left 속성 사용 가능? (사용가능 - 기준은 브라우저 좌표)
+    3) 자식 높이가 부모 높이에 영향?(영향없음)
+-->
+<body>
+<div class="box1"></div>   
+
+<div class="parent-absolute">
+    <div class="child-absolute"></div>
+</div> 
+</body>
+</html>

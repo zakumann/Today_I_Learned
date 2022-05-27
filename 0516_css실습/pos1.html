@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- 주석 단축키: ctrl + / -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>static</title>
+    <style>
+        .parent-static{
+            width: 300px;
+            /* height:300px; */ /*3)*/
+            background-color: antiquewhite;
+        }
+        .child-static{
+            /* position:static; 기본값- 아무 변화 없음 */
+            width: 100px;
+            height:100px;
+            background-color: blueviolet;
+            /* margin-top:100px; */ /*1)*/
+            /* left:100px; */ /*2)*/
+        }
+        
+    </style>
+</head>
+<!-- position: static
+    - 기본값(설정하지 않아도  기본 적용)
+    - 2차원 속성  ->  float 사용하면 위치 지정 가능
+    [3가지 체크사항]
+    1) 부모 자식 간 마진 병합? (발생)
+    2) top, right, bottom, left 속성 사용 가능? (사용불가)
+    3) 자식 높이가 부모 높이에 영향?(영향있음)
+-->
+<body>
+<div class="parent-static">
+    <div class="child-static"></div>
+</div>    
+</body>
+</html>

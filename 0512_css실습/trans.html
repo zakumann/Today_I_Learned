@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .origin{width:200px; height: 134px;
+                bordeR:1px solid black;
+                margin:40px;perspective:200px;/*원근감*/}
+        .movex:hover{
+            -webkit-transform: translatex(50px);
+            -ms-transform: translatex(50px);
+            -moz-transform: translatex(50px);
+            -o-transform: translatex(50px);
+            transform: translatex(50px);
+        }
+        .movey:hover{transform: translateY(50px);}
+        .movexy:hover{transform:translate(10px, 20px);}
+        /* 이미지 확대, 축소 */
+        .scalex:hover{transform: scalex(1.5);}
+        .scaley:hover{transform: scaley(1.5);}
+        .scalexy:hover{transform: scale(0.5,0.5);}
+        /*기울임 - 각도*/
+        .skewx:hover{transform: skewx(40deg);}
+        .skewy:hover{transform: skewy(20deg);}
+        .skewxy:hover{transform: skew(0deg, -30deg);}
+        /*회전*/
+        .rot:hover{transform: rotate(90deg);}
+        /*3차원*/
+        .rotx:hover{transform: rotatex(45deg);}
+        .roty:hover{transform: rotatey(45deg);}
+        .rotz:hover{transform: rotatez(45deg);}
+        .rotxyz:hover{transform: rotate3d(2.5, 1.2,-1.5, 45deg);}
+    </style>
+</head>
+<body>
+    <div class="origin">
+        <div class="rotx">
+            <img src="./images/bus.jpg">
+        </div>
+    </div>
+    <div class="origin">
+        <div class="roty">
+            <img src="./images/bus.jpg">
+        </div>
+    </div>
+    <div class="origin">
+        <div class="rotz">
+            <img src="./images/bus.jpg">
+        </div>
+    </div>
+    <div class="origin">
+        <div class="rotxyz">
+            <img src="./images/bus.jpg">
+        </div>
+    </div>
+    <div class="origin">
+        <div class="skewx">
+            <img src="./images/bus.jpg">
+        </div>
+    </div>
+    <div class="origin">
+        <div class="skewy">
+            <img src="./images/bus.jpg">
+        </div>
+    </div>
+    <div class="origin">
+        <div class="skewxy">
+            <img src="./images/bus.jpg">
+        </div>
+    </div>
+</body>
+</html>

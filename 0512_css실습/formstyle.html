@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[type=text]{color: red;}
+        input:hover, textarea:hover{
+            background-color:aliceblue;
+        }
+        input[type=text]:focus, input[type=email]:focus{
+            font-size: 120%;
+        }
+        label{display: block;padding: 5px;}
+        label span{display: inline-block;
+            width:90px; text-align: right;}
+    </style>
+</head>
+<body>
+    <h3>CONTACT US</h3>
+    <hr>
+    <form>
+        <label>
+            <span>Name</span><input type="text">
+        </label>
+        <label>
+            <span>Email</span><input type="email" placeholder="abc@mail.com">
+        </label>
+        <label>
+            <span>Comment</span>
+            <textarea rows="5" cols="40" 
+            placeholder="메시지를 남겨주세요."></textarea>
+        </label>
+        <label><span></span><input type="submit" value="전송"></label>
+    </form>
+</body>
+</html>

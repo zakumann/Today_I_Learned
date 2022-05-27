@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- 주석 단축키: ctrl + / -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>static</title>
+    <style>
+        .box1{
+            width:300px;
+            height:300px;
+            background-color: palegreen;
+        }
+        .parent-static{
+            width: 300px;
+            /* height:300px; */ /*3) */
+            background-color: antiquewhite;
+        }
+        .child-static{
+            position:fixed; 
+            width: 100px;
+            height:100px;
+            background-color: blueviolet;
+            /*margin-top: 100px;*/ /* 1)*/
+            /*top:100px;*/ /*2) */
+        }
+        .box2{
+            width:300px;
+            height:500px;
+            background-color: plum;
+        }
+    </style>
+</head>
+<!-- position: fixed
+    - 기본값(설정하지 않아도  기본 적용)
+    - 2차원 속성  ->  float 사용하면 위치 지정 가능
+    [3가지 체크사항]
+    1) 부모 자식 간 마진 병합? (발생하지 않음)
+    2) top, right, bottom, left 속성 사용 가능? (사용가능- 기준은 브라우저)
+    3) 자식 높이가 부모 높이에 영향?(영향없음-부모 안보임)
+-->
+<body>
+<div class="box1"></div>   
+
+<div class="parent-static">
+    <div class="child-static"></div>
+</div> 
+
+<div class="box2"></div>   
+</body>
+</html>

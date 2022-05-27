@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .origin{width:200px; height: 134px;
+                border:1px solid black;
+                margin:40px; perspective:200px;/*원근감*/}
+    /*이미지 변환 시작점 지정하기*/
+        .bus{transform: rotatez(10deg);}
+        .ltop .bus{transform-origin: left top;}
+        .rtop .bus{transform-origin: right top;}
+        .lbottom .bus{transform-origin: left bottom;}
+        .rbottom .bus{transform-origin: right bottom;}
+    </style>
+</head>
+<body>
+    <div class="origin">
+        <div class="ltop">
+            <img src="./images/bus.jpg" class="bus">
+        </div>
+    </div>
+    <div class="origin">
+        <div class="rtop">
+            <img src="./images/bus.jpg">
+        </div>
+    </div>
+    <div class="origin">
+        <div class="ltop">
+            <img src="./images/bus.jpg">
+        </div>
+    </div>
+    <div class="origin">
+        <div class="ltop">
+            <img src="./images/bus.jpg">
+        </div>
+    </div>
+    <div class="origin">
+        <div class="ltop">
+            <img src="./images/bus.jpg">
+        </div>
+    </div>
+</body>
+</html>
