@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+.pc{
+    color:red;
+    font-size: 50px;
+    background-color: aquamarine;
+    /*display:none;*/ /*화면에서 안 보이고 공간도 차지하지 않음 */
+}
+.mobile{
+    display:none;/*화면에서 안 보이고 공간도 차지하지 않음 */
+}
+/* 미디어쿼리 중단점: 모바일/ 태블릿/ 데스크탑
+    모바일기기 레이아웃을 기본으로  CSS 만들고 이 후 데스크탑 쪽으로 맞추는 방식: 모바일 퍼스트 
+    -> 모바일 기기 제약을 고려해 처리속도, 화면크기 최적화를 먼저 진행 
+    320px ~ 768px미만: 모바일기기
+    768px ~ 1024px미만: 태블릿
+    1024px~ : PC
+    */
+@media (max-width:99px){
+    .pc { display:none;}
+    .mobile{display:block;}
+}
+@media (min-width:600px) and (max-width:767px){
+    .pc{
+        color: blue;
+        font-size:20px;
+        background-color: green;
+    }
+}
+
+@media (min-width:100px) and (max-width:599px){
+    .pc{
+        color: white;
+        font-size:10px;
+        /* background-color: green; */
+    }
+}
+
+/*  landscape : 단말기 가로 방향 
+    portrait: 단말기 세로 방향 */
+@media screen and (orientation:landscape){
+    body{
+        background-color: orange;
+    }
+}
+@media screen and (orientation:portrait){
+    body{
+        background-color: crimson;
+    }
+}

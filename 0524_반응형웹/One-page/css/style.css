@@ -1,0 +1,105 @@
+@charset "utf-8";
+
+*{
+    box-sizing:border-box;
+    padding:0;
+}
+html{
+    font-size:100%;
+    line-height: 1.15;
+}
+body{
+    font-family:sans-serif;
+    margin:0;
+    color:white;
+}
+a{
+    background-color: transparent;
+    text-decoration: none;
+}
+img{
+    border-style:none;
+    vertical-align: bottom;
+}
+h1,h2{
+    font-weight: lighter;
+    margin:0;
+    /* color:white; */
+}
+
+/* title section */
+.title{
+    font-family: 'Dancing Script', cursive;
+    font-size: 7rem; /*112px;*/
+    margin-bottom: 2rem; /*32px;*/
+    padding-top:10vh;
+    /* text-align: center; */
+}
+p{
+    line-height: 1.7;
+    font-size:18px;
+    /* color:white */
+    /* text-align:center; */
+}
+.container{
+    height: 100vh;
+    overflow: auto;
+    scroll-snap-type: y mandatory; 
+}
+.top{
+    background-image: url("../images/img1.jpg");
+    /* padding-top:10vh;
+    text-align: center; */
+}
+section{
+    height:100vh;
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center;
+    text-align: center;
+    scroll-snap-align: start;
+}
+.menu{
+    background-image: url("../images/img2.jpg");
+}
+.contact{
+    background-image: url("../images/img3.jpg");
+}
+
+.btn{
+    background-color: #555;
+    font-size: 24px;
+    color:#fff;
+    padding: 16px 56px;
+    border-radius: 6px;
+    display:inline-block;
+    margin: 32px 0 36px;
+}
+.btn:hover{
+    background-color:#777;
+}
+.contact-sns{
+    display:flex;
+    justify-content: center;
+}
+.contact-sns a{
+    display: inline-block;
+    background-color: #fff;
+    color: #555;
+    width: 60px;
+    height: 60px;
+    margin: 0 8px;
+    border-radius: 50%;
+    font-size: 32px;
+    /* padding: 12px 0 0 2px; */
+    line-height: 60px;
+}
+.contact-sns a:hover{
+    background-color: rgba(255,255,255, .5);
+}
+/* 화면 크기가 700px보다 작을 때 폰트 사이즈를 64px로 줄인다. */
+@media(max-width: 700px){
+    .title{
+        font-size:64px;
+    }
+}

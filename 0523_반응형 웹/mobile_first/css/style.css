@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+/* 모바일 코드 : 768 이하일 때 보이는 설정 */
+h1{
+    font-size:20px;
+    background-color:blue;
+}
+/*모바일 퍼스트로 작성해보자 - 미디어쿼리 작성시
+  작은 화면 -> 큰 화면 ==> min-width를 사용
+
+
+  */
+/* 최소 768px 이상일 때 적용: 태블릿 */
+/* 미디어쿼리 연속 사용시 max-width:1023px 이 있는 것과 마찬가지이므로 생략 가능*/
+@media (min-width:768px)/*(max-width:1023px)*/{ 
+    h1{
+        font-size: 40px;
+        background-color: pink;
+    }
+}
+
+/* 최소 1024px 이상일 때 적용: PC */
+@media (min-width:1024px){
+    h1{
+        font-size: 80px;
+        background-color: gray;
+    }
+}

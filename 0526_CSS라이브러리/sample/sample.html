@@ -1,0 +1,86 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <style>
+
+        .wrapper{
+            font-size: 16px;
+        }
+        h1{
+            font-size: 3em;
+        }
+        p{
+            font-size: 1.5em;
+        }
+        div{
+            font-size: 1.5em;
+        }
+        .rem-test{
+            font-size: 1.5rem; /*16px x 1.5 */
+            font-size: 24px;
+        }
+        svg {fill:blue;
+        height: 64px;
+        width: 64px;}
+   
+        [class^="imghvr-slide-"]:hover figcaption,
+        [class*=" imghvr-slide-"]:hover figcaption {
+            -webkit-transform: translate(0, 0);
+                    transform: translate(0, 0);
+        }
+            
+            /* imghvr-slide-up
+           ----------------------------- */
+        .imghvr-slide-up figcaption {
+            -webkit-transform: translateY(100%);
+                    transform: translateY(100%);
+        }
+
+    </style>
+</head>
+<body>
+    <figure class="imghvr-slide-up"><img src="example-image.jpg" alt="example-image">
+        <figcaption>
+          <h3>Hello World</h3>
+          <p>Life is too important to be taken seriously!</p>
+        </figcaption><a href="javascript:;"></a>
+      </figure>
+      <hr>
+    <h1 class="animate__animated animate__backOutDown">An animated element</h1>
+    <hr>
+    <img src="./images/shopping_cart_black_24dp.svg" width="48" height="48">
+    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0z" fill="none"/><path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/></svg>
+    <hr>
+    <div class="wrapper">
+        <h1>3em 크기의 제목</h1>
+        <p>1.5em 크기의 텍스트</p>
+        <div>16px 크기의 텍스트입니다.</div>
+    </div>
+
+    <div class="wrapper">
+
+        <div>3em 크기의 제목
+            <div>1.5em 크기의 텍스트
+                <div>16px 크기의 텍스트입니다.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        [test text]
+        <div class="rem-test">3em 크기의 제목
+            <div class="rem-test">1.5em 크기의 텍스트
+                <div class="rem-test">16px 크기의 텍스트입니다.</div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

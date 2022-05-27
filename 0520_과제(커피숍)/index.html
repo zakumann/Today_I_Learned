@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ko" id="no-fouc">
+    <head>
+        <meta charset="utf-8">
+        <title>Coffee House</title>
+        <meta name="description" content="커피전문점 홈페이지">
+        <link rel="shortcut icon" href="./images/favicon.ico">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS -->
+     <link href="https://fonts.googleapis.com/css2?family=Koulen&family=Macondo&family=Nanum+Gothic&display=swap" rel="stylesheet">
+        <!-- <link rel="stylesheet" href="https://unpkg.com/destyle.css@1.0.5/destyle.css"> -->
+        <link href="css/style.css" rel="stylesheet">
+        <style type="text/css">
+
+            #no-fouc { opacity: 0; }
+          
+          </style>
+          <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    </head>
+    
+<body>
+    <header>
+        <div class="wrapper">
+            <a class="logo" href="#message">Coffee House</a>
+            <nav>
+                <ul class="main-nav">
+                    <li><a href="#coffee">COFFEE</a></li>
+                    <li><a href="#rewards">REWARDS</a></li>
+                    <li><a href="#menu">MENU</a></li>
+                    <li><a href="#order">ORDER</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+<section id="message">
+    <div class="wrapper">
+        <h1>Special Coffee</h1>
+        <p class="message">always beside you, my coffee bean</p>
+
+    </div>
+</section>
+
+<section id="coffee">
+    <div class="wrapper">
+        <h2>Coffee</h2>
+            <div class="coffee-content">
+                <div class="text-wrap">
+                    <p>고품질의 원두만을 제공합니다. </p>
+                    <p>커피 본연의 신선함을 제공합니다. </p>
+                    <p>커피 전문가와 함께 합니다. </p>
+                </div>
+            <div class="image-wrap">
+                <img src="./images/bean.jpg">
+            </div>
+        </div> 
+    </div>
+</section>
+
+<section id="rewards">
+    <div class="wrapper">
+        <h2>Rewards</h2>
+        <table class="rewards-table">
+            <tr>
+                <td>혜택 1</td>
+                <td>My Coffee 포인트를 적립해드립니다.</td>
+            </tr>
+            <tr>
+                <td>혜택 2</td>
+                <td>30포인트가 적립되면 Gold level이 됩니다.</td>
+            </tr>
+            <tr>
+                <td>혜택 3</td>
+                <td>1달에 한 번 1+1 커피가 제공됩니다. </td>
+            </tr>
+            <tr>
+                <td>혜택 4</td>
+                <td>다양한 이벤트 응모 기회가 제공됩니다.</td>
+            </tr>
+        </table>
+    </div>
+</section>
+<section id="menu">
+    <div class="wrapper">
+        <h2>Menu</h2>
+        <div class="menu-list">
+            <div class="menu-text">
+                <h3>아메리카노</h3>
+                <p>에스프레소에 뜨거운 물을 희석시켜 만든 음료.
+
+                    아메리카노라고 줄여서 불리지만 정확한 명칭은 Caffé Americano이다. 이탈리아어인 'Caffè Americano'를 영역(英譯)하면 'American coffee'이지만 영어로 쓰이는 경우는 없다.
+
+                    단어를 해석하자면 '미국식 커피'로, 말 그대로 '유럽식 커피에 비해 옅은 농도인 미국식 커피 스타일'을 일컫는 말이다.
+
+                    에스프레소보다 농도가 연하고 양이 많다는 이유로 카페 룽고(Caffé Lungo; 줄여서 룽고)와 혼동할 수 있지만, 서로 다른 커피이다. </p>
+            </div>
+            <img src="images/ame.jpg" alt="ame">
+                </div>
+                <div class="menu-list">                    
+                    <div class="menu-text">
+                        <h3>라떼</h3>
+                        <p>이탈리아어로 우유를 뜻하는 단어지만 스타벅스의 성공 이후 라떼=카페라테의 의미로 널리 쓰이게 되었다. 국내에서는 흔히 음료 이름에 '라떼'가 붙어 있으면 대부분 커피(에스프레소)가 포함된 음료이다. 유럽권 국가에서 '라떼'를 주문하면 관광객의 표현에 익숙한 점원이거나 스타벅스가 널리 퍼진 국가가 아닌이상 우유를 받게될 수 있으니 주의.
+                            
+                            국립국어원에 따르면 이탈리아어로 Latte이므로 표기법으로는 '라테'가 올바르다. 그러나 라테라고 제대로 발음하는 사람이나 표기하는 카페는 거의 없고, 대부분 '라떼'로 부른다.</p>
+            </div>
+            <img src="images/latte.jpg" alt="latte">
+        </div>
+    </div>
+</section>
+
+<section id="order">
+
+    <div class="wrapper">
+        <h2>Order</h2>
+        <form class="order-form" action="#">
+            <label for="tel">Phone Number</label>
+            <input id="tel" class="order-field" type="tel" placeholder="예 : 010-111-2222">
+            <label for="text">Menu</label>
+            <input id="text" class="order-field" type="text" placeholder="예 : 아메리카노 2잔">
+            <input class="order-btn" type="submit" value="Order Now!">
+        </form>
+                
+        <div class="footer wrapper">
+            <p>
+                <a href="mailto:info@example.com">문의사항</a> / <small>&copy; 2022 Coffee House</small>
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- <footer>
+    <div class="footer wrapper">
+        <p>
+            <a href="mailto:abc@cde.com">문의사항</a> / <small>&copy; 2022 My Coffee House</small>
+        </p>
+    </div>
+</footer> -->
+<script type="text/javascript">
+    $(document).ready(function () {      
+        $("#no-fouc").delay(250).animate({"opacity": "1"}, 250);    
+    });    
+    </script>       
+</body>
+
+</html>

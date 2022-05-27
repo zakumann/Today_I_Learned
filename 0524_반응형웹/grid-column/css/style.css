@@ -1,0 +1,58 @@
+@charset "utf-8";
+*{
+    margin:0;
+    padding:0;
+}
+h1{
+    width:100%;
+    height: 150px;
+    line-height: 150px; /* h1 텍스트 y축 가운데 정렬*/
+    padding-left: 50px;
+    background: url("../images/img6.jpg") no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+
+#wrapper{
+    width:90%;
+    max-width: 1100px;
+    min-width: 760px;
+    margin: 50px auto; /*높이 50px 띄우고 가운데정렬*/
+}
+/*칼럼 수 지정, 칼럼 사이 간격 지정 */
+#columns{
+    column-count:2;
+    column-gap: 10px;
+}
+.card{
+    display:inline-block;
+    width: 200px;
+    background-color: #fff;
+    box-shadow: 0 1px 1px #ccc;
+    padding:15px;
+    padding-bottom:15px;
+    margin:10px
+}
+.card img{
+    width: 100%;
+    height: 160px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 15px;
+    margin-bottom:5px;
+}
+.card p{
+    padding:10px;
+}
+
+/*900px 이상*/
+@media (min-width:900px){
+    #columns{
+        column-count: 3;
+    }
+}
+/* 1100px 이상 */
+@media (min-width:1100px){
+    #columns{
+        column-count: 4;
+    }
+}

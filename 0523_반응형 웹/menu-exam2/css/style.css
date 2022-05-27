@@ -1,0 +1,69 @@
+@charset "utf-8";
+body, h1, p{
+    margin:0;
+    padding:0;
+}
+p{font-size: 48px;}
+/* position static fixed */
+.intro{
+    width:100%;
+    height: 80px;
+    display:flex;
+    position:fixed;
+    /* border:1px solid red; */
+}
+.intro h1{
+    width:50%;
+    height:100%;
+    background-color: cadetblue;
+}
+.intro nav{
+    width:50%;
+    height:100%;
+    /* background-color: yellowgreen; */
+}
+.intro nav ul{
+    list-style: none;
+    display:flex;
+    margin:0;
+    padding:0;
+}
+.intro nav ul li{
+    width:33.3333%;
+    height: 80px;
+    /* border:1px solid red; */
+}
+.intro nav ul li:first-child{
+    background-color: blueviolet;
+}
+.intro nav ul li:nth-child(2){
+    background-color: aquamarine;
+}
+.intro nav ul li:last-child{
+    background-color: royalblue;
+}
+
+.main{
+    width:100%;
+    height:500px;
+    background-color: tomato;
+    padding-top:100px;
+}
+
+/*768px 보다 작을 때 header가 2단으로 바뀌도록 처리 */
+@media(max-width:768px){
+    .intro{
+        height:160px;
+        flex-direction: column;
+        position:static;
+    }
+    .intro h1,
+    .intro nav{
+        width:100%;
+    }
+    .main{
+        padding-top:0;
+        background-color: antiquewhite;
+    }
+    p {font-size: 24px;}
+}

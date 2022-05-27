@@ -1,0 +1,335 @@
+@charset 'UTF-8';
+/* 
+Colors
+================================================ */
+:root {
+    --light-blue: #4db1ec;
+    --blue: #1665cc;
+    --purple: #b473bf;
+    --pink: #ffb2c1;
+    --orange: #ff9f67;
+    --yellow: #ffd673;
+    --light-green: #a2e29b;
+    --green: #00a2af;
+    --grey: #333;
+    --white: #fff;
+}
+
+html{
+    font-size: 100%;    /*16px == 1rem, 반응형 웹에서 사용. margin,padding rem 사용시 크롬에서 폰트사이즈와 화면을 확대축소 시 
+            margin, padding 까지 커져서 데스크탑에서 모바일 화면으로 보게되는 현상이 발생할 수 있다고 함  */
+    /* 스무스 스크롤 */
+    scroll-behavior: smooth;
+}
+body{
+    color: var(--grey);
+    margin: 0;
+    padding: 0;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+img {
+    max-width: 100%;
+    border-style: none;
+    vertical-align: bottom;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+h1,
+h2 {
+    text-align: center;
+}
+h2 {
+    font-size: 80px;
+}
+header,
+h1,
+h2,
+.message {
+    font-family: 'Macondo', cursive;
+}
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a {
+    /* background-color: transparent; */
+    text-decoration: none;
+    color: var(--white);
+  }
+  /* Layout */
+.wrapper {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+/************  HEADER ************/
+header {
+    background: var(--grey);
+    /* padding: 16px 0; */
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+   
+}
+
+.main-nav{
+    width: 100%;
+    position: static;
+    display: flex;
+}
+header .wrapper{
+    display: flex;
+    flex-wrap: wrap; /*폭 좁아지면 두 줄 배치 가능*/
+    justify-content: space-between;
+}
+header a{
+    padding: 16px 0;
+    color: var(--white);
+    font-size: 1.2rem;
+}
+.main-nav li{
+    display: inline-block;
+    text-align: center; /*text-align: inline, inline-block, text에서만 적용됨 */
+    padding: 16px 0;
+    margin: 0 0 0 24px;
+}
+
+
+
+/************  Special coffee ************/
+#message {
+    /* ↓ 생략형이면 브라우저에 따라 제대로 동작하지 않을 수 있음
+    background: var(--light-blue) url('../images/main.jpg') no-repeat center / cover; */
+    background-color: var(--light-blue);
+    background-image: url('../images/main.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: screen;  /* 요소가 겹칠 경우 색상 screen- 전경과 배경색을 각각 반전한 후 서로 곱해 나온 값을 다시 반전한 값*/
+    animation: bg-color 24s infinite;  /* 시간: duration */
+    height: 100vh; /*실행중인 스크린의 크기에 맞춰 바꾸겠다. */
+    display: flex;   /*텍스트 간 정렬 */
+    flex-direction: column;
+    justify-content: center; /*텍스트 간 정렬 */
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%); /*요소의 일부분 자르기 https://bennettfeely.com/clippy/*/
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);  /* (좌측 상단(좌표값), 우측 상단, 우측 하단, 좌측 하단) */
+}
+@keyframes bg-color {
+    0% { background-color: var(--light-blue); }
+    12.5% { background-color: var(--blue); }
+    25% { background-color: var(--purple); }
+    37.5% { background-color: var(--pink); }
+    50% { background-color: var(--orange); }
+    62.5% { background-color: var(--yellow); }
+    75% { background-color: var(--light-green); }
+    87.5% { background-color: var(--green); }
+    100% { background-color: var(--light-blue); }
+}
+
+#message h1 {
+    font-size: 40px;
+    margin-bottom: 24px;
+    text-shadow: 2px 2px 2px gray;
+}
+.message {    
+   
+    text-align: center;
+    text-transform: uppercase;
+    border-top: 3px solid var(--grey);
+    border-bottom: 3px solid var(--grey);
+    padding: 8px 0;
+    font-size: 24px;
+    margin-bottom: 24px;
+    text-shadow: 4px 2px 2px gray;
+}
+/************  coffee ************/
+#coffee {
+    padding: 64px 16px;
+    
+}
+#coffee .coffee-content{
+    /* padding: 64px 16px;
+    text-align: center; */
+   /* float:left; */
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+    justify-content: center;
+    /* height:400px;  */
+}
+/*  [background-clip]
+    border-box : 외곽선의 비어 있는 부분까지 배경을 칠합니다. (기본값)
+    padding-box : 외곽선 부분은 칠하지 않지만 안쪽 여백까지는 배경을 칠합니다.
+    content-box : 안쪽 여백 부분도 칠하지 않고 오로지 내용이 들어갈 부분만 배경을 칠합니다.
+    text : 텍스트를 따라서 배경을 칠합니다. 추가된 지 얼마 되지 않아 아직 지원이 완전하지 않습니다.
+*/
+#coffee h2 {
+    background: linear-gradient(var(--yellow), var(--orange));
+    -webkit-background-clip: text;
+    background-clip: text;  /*요소의 배경 넣을 범위 - 그라디언트를 텍스트에만 적용 */
+    /* -webkit-text-fill-color: transparent; */
+    color: transparent; /* 글자 색깔을 투명으로 만드는 코드, 배경 칠할 범위를 텍스트로 한정했는데 텍스트 색이 들어가면 
+                        텍스트를 따라 칠한 배경을 글자 색깔로 가려짐. 무색으로 설정하면 적용된 배경을 볼 수 있다.*/
+                        
+}
+#coffee .text-wrap {
+    /* margin-bottom: 32px; */
+    margin-right: 52px;
+    
+}
+
+#coffee .image-wrap{
+    width: 400px;
+    height: auto;
+}
+#coffee .image-wrap img{
+    width:100%;
+}
+/************  rewards ************/
+#rewards {
+    background-image: linear-gradient(var(--light-green), var(--green));
+    padding: 112px 0;
+    -webkit-clip-path: polygon(0 0, 100% 10%, 100% 90%, 0 100%);
+    clip-path: polygon(0 0, 100% 10%, 100% 90%, 0 100%);
+}
+#rewards h2,
+#rewards td {
+    color: var(--white);
+}
+#rewards .wrapper{    
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.rewards-table{
+    /* width:100%; */
+    width:60%;
+    font-size: 14px;
+   
+}
+.rewards-table tr {
+    border-bottom: 1px solid rgba(255,255,255,.5);
+}
+.rewards-table td:nth-child(1) {
+    line-height: 1.5;
+    padding: 16px 0;    
+    text-align: right;
+    width:35%;
+}
+.rewards-table td:nth-child(2) {
+    line-height: 1.5;
+    padding: 16px 0 16px 16px;    
+    text-align: left;
+}
+
+/************  Menu ************/
+#menu {
+    padding: 64px 16px;
+    
+}
+.menu-list {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+	align-items: center;
+	align-content: center;
+
+    line-height: 1.8;
+    margin-bottom: 32px;
+    
+}
+#menu h2 {
+    background: linear-gradient(var(--light-blue), var(--blue));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    /* border:1px solid red; */
+    margin-bottom: 64px;
+}
+#menu h3 {
+    font-size: 24px; 
+}
+#menu .menu-text{
+    margin-left:48px;
+}
+#menu img {
+    border-radius: 50%;
+    width: 20%;
+}
+
+
+
+
+/************  Order ************/
+#order {
+    background-image: linear-gradient(var(--pink), var(--purple));
+       padding: 96px 16px 32px;
+       -webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
+       clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
+       
+}
+
+#order h2 {
+    color: var(--white);
+}
+.order-form {
+    /* border:1px solid red; */
+    max-width: 480px;
+    margin: 0 auto 5rem;
+}
+.order-form label {
+    color: var(--white);
+    display: block;
+    margin-bottom: 8px;
+}
+.order-form input{
+    outline: 0;
+    border: 0;
+}
+.order-field {
+    background: rgba(255,255,255,.6);
+    padding: 16px 10px;
+    width: 100%;
+    margin-bottom: 24px;
+}
+.order-btn {
+    background: var(--grey);
+    color: var(--white);
+    display: block;
+    width: 104%; /*100% - 크기가 틀어져서 임시로 처리 */
+    padding: 16px 10px;
+    margin-top: 16px;
+}
+
+.order-btn:hover {
+    background: var(--blue);
+}
+a:hover,
+.order-btn:hover {
+        transition: .3s;
+}
+a:hover {
+    color: var(--blue);
+}
+
+
+/*
+FOOTER
+================================================ */
+.footer {
+    border-top: 1px solid rgba(255,255,255,0.5);
+    padding-top: 2rem;
+    text-align: center;
+    font-size: .875rem;
+    color: var(--white);
+}
+.footer a {
+    text-decoration: underline;
+}
