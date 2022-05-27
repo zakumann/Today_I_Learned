@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--
+        normal: 여러 개 공백을 하나로 표시/
+        nowrap: 여러 개 공백을 하나로 표시. 영역 너비를 넘어가는
+         내용은 줄 바꾸지 않고 한 줄 표시
+        pre: 여러 개 공백을 그대로 표시. 영역 너비를 넘어가는 내용은 줄 바꾸지 않고
+         계속 한 줄 표시
+        pre-line: 여러 개 공백으 하나로 표시. 영역 너비를 넘어가는 내용은 자동 줄 바꿈
+        pre-wrap: 여러 개 공백을 그대로 표시. 영역 너비를 넘어가는 내용은 자동 줄 바꿈
+    -->
+    <style>
+        div{width: 400px; height: 200px; background-color: aliceblue;}
+        .a {white-space:nowrap;}
+        .b {white-space:normal;}
+        .c {white-space:pre;}
+        .d {white-space:pre-line;}
+        .e {white-space:pre-wrap;}
+    </style>
+</head>
+<body>
+    <div>
+        <p class="a">
+            This is some text. This is some text.
+            This is some text. This is some text.
+            This is some text. This is some text.
+            This is some text. This is some text.
+        </p>
+    </div>
+    <div>
+        <p class="b">
+            This is some text. This is some text.
+            This is some text. This is some text.
+            This is some text. This is some text.
+            This is some text. This is some text.
+        </p>
+    </div>
+    <div>
+        <p class="c">
+            This is some text. This is some text.
+            This is some text. This is some text.
+            This is some text. This is some text.
+            This is some text. This is some text.
+        </p>
+    </div>
+    <div>
+        <p class="d">
+            This is some text. This is some text.
+            This is some text. This is some text.
+            This is some text. This is some text.
+            This is some text. This is some text.
+        </p>
+    </div>
+    <div>
+        <p class="e">
+            This is some text. This is some text.
+            This is some text. This is some text.
+            This is some text. This is some text.
+            This is some text. This is some text.
+        </p>
+    </div>
+    <h2 style="letter-spacing:0.2em">This is some text</h2>
+    <h2 style="letter-spacing:0.5em">This is some text</h2>
+    <h2 style="word-spacing:30px">This is some text</h2>
+    <h2 style="word-spacing:1cm">This is some text</h2>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table, th, td{
+            border: solid 1px black;
+            border-collapse: collapse;
+            padding: 8px;
+        }
+        td {width:80px;}
+    </style>
+</head>
+<body>
+    <!-- 테이블 작성의 기본적인 태그 : table, th, tr, td 
+    <table> : 표를 만들 때 사용
+    <th> : 테이블 각 열의 제목 의미, 두꺼운 글자로 셀 중앙에 배치
+    <tr> : 행
+    <td> : 열, 열 제목을 제외하고 각각의 셀을 표현할 때 사용
+    -->
+    <table>
+        <tr>
+            <th>열1 제목</th>
+            <th>열2 제목</th>
+            <th>열3 제목</th>
+        </tr>
+        <tr>
+            <td>열1</td>
+            <td>열2</td>
+            <td>열3</td>
+        </tr>
+        <tr>
+            <td>열1</td>
+            <td>열2</td>
+            <td>열3</td>
+        </tr>
+        <tr>
+            <td>열1</td>
+            <td>열2</td>
+            <td>열3</td>
+        </tr>
+    </table>
+    <h3>KTX 열차 시간표</h3>
+    <table>
+        <tr>
+            <th colspan="4">출발</th>
+            <!--<th>도착</th>-->
+            <!--<th>객실</th>-->
+            <!--<th>요금</th>-->
+        </tr>
+        <tr>
+            <td rowspan="2">서울</td>
+            <td>부산</td>
+            <td>일반실</td>
+            <td>50,000원</td>
+        </tr>
+        <tr>
+            <!--<td>서울</td>-->
+            <td>대구</td>
+            <td colspan="2">특실</td>
+            <!--<td>70,000원</td>-->
+        </tr>
+    </table>
+
+
+    <!--caption, thead, tbody, tfoot-->
+    <table>
+        <caption>미세먼지 측정</caption>
+        <thead>
+            <th>항목</th>
+            <th>등급</th>
+            <th>측정값</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>초미세먼지</td>
+                <td>좋음</td>
+                <td>12마이크로그램</td>
+            </tr>
+            <tr>
+                <td>이산화질소</td>
+                <td>보통</td>
+                <td>0.023ppm</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>합</td>
+                <td>100</td>
+                <td>200</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

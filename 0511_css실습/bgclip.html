@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{width: 300px;
+            padding:35px;
+            border: 5px dotted #222;
+            margin-bottom: 20px;
+            background-color: skyblue;}
+        .bg1{background-clip: border-box;}/*border까지 적용*/
+        .bg2{background-clip: padding-box;}/*border 빼고 padding까지 적용*/
+        .bg3{background-clip: content-box;}/*내용 부분에만 적용*/
+    </style>
+</head>
+<body>
+
+    <div class="bg1">
+        <h1>초콜릿</h1>
+        <p>초콜릿은 카카오 콩을 정제한 카카오매스에 설탕 등을 첨가해 만든 달콤한 맛의 과자이다. 음료화한 상태인 핫초코로 마시거나 고체로 굳혀 먹으며, 이외에도 여러 디저트의 재료로 사용된다.
+          초콜릿을 전문적으로 만드는 사람을 쇼콜라티에(chocolatier)라고 부른다.</p>
+  </div>
+
+  <div class="bg2">
+    <h1>초콜릿</h1>
+    <p>초콜릿은 카카오 콩을 정제한 카카오매스에 설탕 등을 첨가해 만든 달콤한 맛의 과자이다. 음료화한 상태인 핫초코로 마시거나 고체로 굳혀 먹으며, 이외에도 여러 디저트의 재료로 사용된다.
+      초콜릿을 전문적으로 만드는 사람을 쇼콜라티에(chocolatier)라고 부른다.</p>
+</div>
+
+<div class="bg3">
+    <h1>초콜릿</h1>
+    <p>초콜릿은 카카오 콩을 정제한 카카오매스에 설탕 등을 첨가해 만든 달콤한 맛의 과자이다. 음료화한 상태인 핫초코로 마시거나 고체로 굳혀 먹으며, 이외에도 여러 디저트의 재료로 사용된다.
+      초콜릿을 전문적으로 만드는 사람을 쇼콜라티에(chocolatier)라고 부른다.</p>
+</div>
+</body>
+</html>

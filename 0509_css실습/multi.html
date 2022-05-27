@@ -1,0 +1,52 @@
+<!--
+    <img> : 이미지가 문서에 포함되지 않고 링크된다.
+    속성
+    - src : source
+    - height: width : px, % 크기 지정
+    - title : 이미지 위에 마우스를 올리면 나타나는 설명
+    - alt : 대체 텍스트, 그림이 렌더링되지 못할 때 나타날 문자열
+
+    - . : 절대경로
+    - .. : 상대경로
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>멀티미디어 연습</title>
+        <link rel="shortcut icon" href="../img2/rain.png">
+    </head>
+    <body>
+        <img src="./img/p4.jpg" width="500px" title="Cupcake" alt="Pound_cake">
+
+    <!--Video tag : mp4, ogg, webM
+        : autoplay, controls, loop, muted,
+        : width/ height 지정 가능
+        <source> : 여러 미디어 리소스 지정에 사용
+            type: video/mp4, video/ogg, video/webm
+    -->
+    <br>
+    <video src="./media/ch1.mp4" controls autoplay muted loop>
+        <source src="./media/ch1.mp4" type="video/mp4">
+        <source src="./media/ch1.ogg" type="video/ogg">
+        브라우저가 video 태그를 지원하지 않습니다.
+    </video>
+        
+    <!-- audio
+    : autoplay, controls, loop, muted,
+        : width/ height 지정 가능
+     -->
+     <br>
+     <audio src="./media/kakao.mp3" autoplay controls></audio>
+
+     <br>
+     <!--iframe-->
+     <ul>
+         <li>네이버 바로가기</li>
+         <li>구글 바로가기</li>
+     </ul>
+
+     <iframe width="792" height="446px" src="https://youtu.be/MRcAPb1UJdU" title="guts_vs_yujiro">
+    </body>
+</html>

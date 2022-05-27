@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> /* ul : square | desc | circle | none */
+        .s1{list-style-type: none;}
+        .s2{list-style-type: circle;}
+        .s3{list-style-image: url('./images/dot.png')}
+        /* ol: decimal | decimal-leading-zero | lower-roman | upper-roman |
+                lower-alpha | lower-latin | upper-alpha | upper-latin |
+                armenian | georgian */
+        .s4{list-style-type: georgian;}
+
+        /*들여쓰기, 내어쓰기 : inside | outside */
+        .s5{list-style-position: inside;}
+        .s6{list-style-position: outside;}
+
+        /*리스트와 목록에 색깔*/
+        .color{background-color: goldenrod;
+                padding: 10px 10px 10px 50px;}
+        .col2{background-color: greenyellow;
+                margin-bottom: 5px;}
+    </style>
+</head>
+<body>
+    <h2>CSS 스타일 - none</h2>
+    <ul class="s1">
+        <li>font</li>
+        <li>text</li>
+        <li>paragraph</li>
+    </ul>
+    <h2>CSS 스타일 - circle</h2>
+    <ul class="s2">
+        <li>font</li>
+        <li>text</li>
+        <li>paragraph</li>
+    </ul>
+    <h2>CSS 스타일 - image</h2>
+    <ul class="s3">
+        <li>font</li>
+        <li>text</li>
+        <li>paragraph</li>
+    </ul>
+    <h2>CSS 스타일 - 순서있는</h2>
+    <ul class="s4">
+        <li>font</li>
+        <li>text</li>
+        <li>paragraph</li>
+    </ul>
+    <h2>CSS 스타일 - 들여쓰기</h2>
+    <ul class="s5 color">
+        <li class="col2">font</li>
+        <li class="col2">text</li>
+        <li class="col2">paragraph</li>
+    </ul>
+    <h2>CSS 스타일 - 내어쓰기</h2>
+    <ul class="s6 color">
+        <li class="col2">font</li>
+        <li class="col2">text</li>
+        <li class="col2">paragraph</li>
+    </ul>
+</body>
+</html>

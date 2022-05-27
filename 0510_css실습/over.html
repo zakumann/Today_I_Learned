@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 오버라이딩(overriding) : 덮어쓰기
+        동일한 CSS 프로퍼티에 서로 다른 값을 설정하는 충돌 시
+        우선순위가 높은 스타일을 적용하는 규칙
+        [기준]
+        1) 스타일 우선순위(importance, Specificity, order)
+         : (제일 중요)사용자 스타일시트: ex.고대비
+         : !important - 어떤 스타일보다 우선 적용
+         : 일단 스타일시트
+         : 기본 브라우저 스타일 : 
+         (우선순위)
+          (높음)inline > id > class > tag
+        2) 스타일 상속
+    -->
+    <style>
+        p{background-color: red !important;}
+        .myclass {background-color: gray;}
+        #myid{background-color: blue;}
+        h2{color:brown;}
+        h2{color:aquamarine;}
+    </style>
+</head>
+<body>
+    <p>스타일우선순위</p>
+    <p class="myclass">!important</p>
+    <p id="myid">일반 스타일시트</p>
+    <p class="myclass">우선순위를 작성해보자.</p>
+    <!-- <p id="myid">id를 중복사용해보자</p> --> <!--잘못된 사용법 -->
+
+    <h2>스타일 적용 우선순위</h2>
+</body>
+</html>

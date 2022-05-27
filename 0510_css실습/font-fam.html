@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    /* 1. font-family 소석승으로 지정 */
+        /*body{font-family:'궁서체 보통', 돋움, serif;} */
+    /* 2. web font 지정
+        /*ttf : 용량이 큼. format('truetype')
+        *.eot : format 안 적음
+        *.woff : format('woff')
+        *.woff2 : format('woff2')
+        구글 웹 폰트 : https://fonts.google.com/
+        네이버 웹 폰트 : https://hangeul.naver.com/font
+        눈누 : https://noonnu.cc/
+        */
+        @import url('https://fonts.googleapis.com/css2?family=Palette+Mosaic&display=swap');
+        .gfont{font-family: 'Nanum Brush Script', cursive;}
+        .nfont{font-family:'MaruBuriExtraLight';}
+
+    /* 3. @font-face : 다운로드 한 글꼴
+        웹 폰트 변환 사이트:https://transfonter.org/ (항상 사용범위 확인 바람) */
+            @font-face{font-family:EastSeaDokdo-Regular;
+                src: url('./Downloads/east-sea-dokdo/EastSeaDokdo-Regular.eot');
+                src: url('./Downloads/east-sea-dokdo/EastSeaDokdo-Regular.woff') format('woff');
+                src: url('./Downloads/east-sea-dokdo/EastSeaDokdo-Regular.ttf') format('truetyle');
+            }
+            .ffont{font-family:EastSeaDokdo-Regular, cursive;}
+    /* 4. 웹 안전 글꼴
+            영어 : https://www.w3schools.com/css/css_font_websafe.asp
+            한글 웹 안전글꼴
+                - 가변폭 : 굴림(Gulim), 돋움(Dotum), 바탕(Batang), 궁서(Gungsuh)
+                - 고정폭: 굴림체(GulimChe), 돋움체(DotumChe), 바탕체(BatangChe), 궁서체(GungshuChe) */
+    </style>
+    
+</head>
+<body>
+    <h3 class="gfont"> font 속성 정하기</h3>
+    <p class="nfont">1. font-family 속성으로 지정</p>
+    <p class="ffont">@font-face : 다운로드 한 글꼴</p>
+</body>
+</html>

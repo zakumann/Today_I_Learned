@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h3, li{color:brown;}/* 태그 셀렉터 */
+        div> div>strong{background-color: yellow;} /*자식 셀렉터*/
+        ul strong {color: dodgerblue;} /*자손 셀렉터*/
+        div.notice{color: red;}/*class 셀렉터*/
+        #list{background-color: mistyrose;} /*id 셀렉터*/
+        #list span {color: forestgreen;} /*자손 셀렉터*/
+        h3:first-letter{color:black;}
+        li:hover{background: yellowgreen;}
+    </style>
+</head>
+<body>
+    <h3>Web Programming</h3>
+    <hr>
+    <div>
+        <div>5월 <strong class="notice">학습 내용</strong></div>
+        <ul>
+            <li>HTML</li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">Javascript</a></li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+        </ul>
+        <div class="notice"><span></span>~금: 10시 ~ 1시</div>
+        <ul>
+            <li>test1</li>
+            <li>test1</li>
+            <li>test1</li>
+            <li>test1</li>
+        </ul>
+        <div class="notice"><span>월~금: 10시~ 1시</span></div>
+        
+        <input type="text" placeholder="예 또는 아니오">
+        <input type="button" value="확인">
+        </div>   
+</body>
+</html>

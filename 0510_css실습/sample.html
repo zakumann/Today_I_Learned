@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {font-size: 40px;}
+        h3, li {color:blue;}
+        li {font-size: 20px;}
+        body.main{background-color: aliceblue;}
+        div.notice{color:red;}
+        div ul#list{background-color: mistyrose; }
+        div > strong {color: dodgerblue;} /*자식*/
+        div> ul> li> strong{color: dodgerblue;}/*자식*/
+        body strong{color:aquamarine;} /*자손 */
+    </style>
+</head>
+<body class="main">
+   <h3><strong>Web</strong> programming</h3> 
+   <hr>
+   <div>
+       <div>5월 <strong>학습 내용</strong></div>
+       <ul id="list">
+           <li class="notice">HTML</li>
+           <li><strong>CSS</strong></li>
+           <li>Javascript</li>
+       </ul>
+       <div class="notice">월~금: 10시 ~ 1시</div>
+   </div>
+</body>
+</html>

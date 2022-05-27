@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .rtl{direction:rtl;}
+        .ltr{direction:ltr;}
+        .a{text-align:left;}
+        .b{text-align:right;}
+        .c{text-align:center;}
+        .d{text-align:justify;}
+        p{
+            border: 1px solid #000;
+            padding:10px;
+            margin: 10px;}
+        .indent1{text-indent: 15px;}
+        .indent2{text-indent: 5%;}
+
+        .small-line{line-height: 0.7;}
+        .big-line{line-height: 2;}
+
+        .content{
+            border: 1px solid #ccc;
+            width:300px;
+            white-space:nowrap; /* 줄바꿈 없음 */
+            overflow: hidden; /* 넘치는 부분을 감춤 */
+            text-overflow:ellipsis;
+        }
+        .content2{
+            text-overflow:clip;
+        }
+        .content:hover{overflow: visible;} /*넘치는 부분 보이게 하기*/
+    </style>
+</head>
+<body>
+    <P class="rtl">direction : 글자 쓰기 방향 지정</P>
+    <p class="ltr">direction : 글자 쓰기 방향 지정</p>
+    <div class="a">
+        direction : 글자 쓰기 방향 지정direction : 글자 쓰기 방향 지정direction : 글자 쓰기 방향 지정
+        direction : 글자 쓰기 방향 지정direction : 글자 쓰기 방향 지정direction : 글자 쓰기 방향 지정
+        direction : 글자 쓰기 방향 지정direction : 글자 쓰기 방향 지정direction : 글자 쓰기 방향 지정
+        direction : 글자 쓰기 방향 지정direction : 글자 쓰기 방향 지정direction : 글자 쓰기 방향 지정
+        direction : 글자 쓰기 방향 지정direction : 글자 쓰기 방향 지정direction : 글자 쓰기 방향 지정
+    </div>
+    <div class="b">
+        direction : 글자 쓰기 방향 지정direction : 글자 쓰기 방향 지정direction : 글자 쓰기 방향 지정
+        direction : 글자 쓰기 방향 지정direction : 글자 쓰기 방향 지정direction : 글자 쓰기 방향 지정
+        direction : 글자 쓰기 방향 지정direction : 글자 쓰기 방향 지정direction : 글자 쓰기 방향 지정
+        direction : 글자 쓰기 방향 지정direction : 글자 쓰기 방향 지정direction : 글자 쓰기 방향 지정
+        direction : 글자 쓰기 방향 지정direction : 글자 쓰기 방향 지정direction : 글자 쓰기 방향 지정
+    </div>
+    <div class="c">
+        direction : 글자 쓰기 방향 지정direction : 글자 쓰기 방향 지정direction : 글자 쓰기 방향 지정
+        direction : 글자 쓰기 방향 지정direction : 글자 쓰기 방향 지정direction : 글자 쓰기 방향 지정
+        direction : 글자 쓰기 방향 지정direction : 글자 쓰기 방향 지정direction : 글자 쓰기 방향 지정
+        direction : 글자 쓰기 방향 지정direction : 글자 쓰기 방향 지정direction : 글자 쓰기 방향 지정
+        direction : 글자 쓰기 방향 지정direction : 글자 쓰기 방향 지정direction : 글자 쓰기 방향 지정
+    </div>
+    <div class="d">
+        direction : 글자 쓰기 방향 지정direction : 글자 쓰기 방향 지정direction : 글자 쓰기 방향 지정
+        direction : 글자 쓰기 방향 지정direction : 글자 쓰기 방향 지정direction : 글자 쓰기 방향 지정
+        direction : 글자 쓰기 방향 지정direction : 글자 쓰기 방향 지정direction : 글자 쓰기 방향 지정
+        direction : 글자 쓰기 방향 지정direction : 글자 쓰기 방향 지정direction : 글자 쓰기 방향 지정
+        direction : 글자 쓰기 방향 지정direction : 글자 쓰기 방향 지정direction : 글자 쓰기 방향 지정
+    </div>
+    <div class="e">
+        <p>direction : 글자 쓰기 방향 지정 direction : </p>
+        <p class="indent1">direction : 글자 쓰기 방향 지정 direction : </p>
+        <p class="indent2">direction : 글자 쓰기 방향 지정 direction : </p>
+        
+    </div>
+    <div class="f">
+        <p>direction : 글자 쓰기 방향 지정 direction : </p>
+        <p class="small-line">direction : 글자 쓰기 방향 지정 direction : 글자 쓰기 방향 지정 </p>
+        <p class="big-line">direction : 글자 쓰기 방향 지정 direction : 글자 쓰기 방향 지정 </p>
+        
+    </div>
+    <div class="g">
+        <p>direction : 글자 쓰기 방향 지정 direction : </p>
+        <p class="content">direction : 글자 쓰기 방향 지정 direction : 글자 쓰기 방향 지정 </p>
+        <p class="content content2">direction : 글자 쓰기 방향 지정 direction : 글자 쓰기 방향 지정 </p>
+        
+    </div>
+</body>
+</html>

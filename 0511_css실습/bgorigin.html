@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{ width: 400px; height: 200px; padding: 35px;
+            border: 15px solid rgb(204, 204, 204, 0.3);
+            margin-bottom: 20px;
+            background: url('./images/bg3.jpg') no-repeat;
+        }
+        .bg1{
+            background-origin: padding-box;
+        }
+        .bg2{
+            background-origin: border-box;
+        }
+        .bg3{
+            background-origin: content-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg1"></div>
+    <div class="bg2"></div>
+    <div class="bg3"></div>
+</body>
+</html>
