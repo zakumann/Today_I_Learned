@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<h3>자기소개서 작성</h3>
+<form name="n">
+이름: <input type="text" value="소놀" size="15" disabled><br>
+암호: <input type="password" value="" size="15" maxlength="4"><br>
+자기소개서: <br>
+<textarea rows="5" cols="24" placeholder="여기에 입력하세요"></textarea>
+
+<!-- 데이터 목록을 가진 텍스트입력 : datalist (자동완성기능)-->
+<br><br>
+선호과일
+<input type="text" list="fruit">
+<datalist id="fruit">
+    <option value="apple"></option>
+    <option value="banana"></option>
+    <option value="grape"></option>
+</datalist>
+<br>
+먹고싶은 음식은?
+<!-- 콤보박스 만들기 ,  selected 기본선택-->
+<select name="china">
+    <option value="1">짜장면</option>
+    <option value="2">짬뽕</option>
+    <option value="3" selected>탕수육</option>
+</select>
+
+<!-- datalist와 콤보박스를 만드는 select의 차이는??? 
+datalist: 사용자 입력 가능 
+select : 목록에서만 선택 가능 
+-->
+<br><br>
+<!-- <label> : 폼 요소의 캡션 만들기 -->
+<!-- 라디오버튼 -->
+<label><input type="radio" name="friut2">바나나</label><br>
+<label><input type="radio" name="friut2" checked>포도</label><br>
+<label><input type="radio" name="friut2">수박</label>
+
+<br><br>
+
+<!-- -->
+<label for="addr">사는 곳: </label>
+<input type="text" id="addr">
+
+<br><br>
+<label>좋아하는 색깔은?</label><br>
+<label>빨강<input type="checkbox"  value="1"></label><br>
+<label>파랑<input type="checkbox"  value="2"></label><br>
+<label>노랑<input type="checkbox"  value="3"></label><br>
+
+<!-- 색깔 입력 
+#FFFFFF (rgb => #rrggbb ) / 0~255(8bit) / 0 ~ FF
+-->
+<label>기타: <input type="color" value="#00BFFF"
+    onchange="document.body.style.color=this.value">
+    <input type="checkbox"  value="4"> </label><br>
+<br><br>
+</form>
+
+
+
+<h3>시간정보입력</h3>
+<input type="month" value="2010-12"><br>
+<input type="week" value="2022-W30"><br>
+<input type="date" value="2012-01-01"><br>
+<input type="datetime-local" value="2012-01-01T06:10:10"><br>
+<input type="time" value="21:30"><br>
+
+<!-- 스핀버튼과 슬라이드바 -->
+<br><br>
+<h3>홈제어시스템</h3>
+<form>
+    지속시간(0.0~10.0시간):
+    <input type="number" min="0.0" max="10.0" step="0.5"><br>
+    온도설정:10&deg;
+    <input type="range" min="10" max="30" list="temp">30&deg;
+    <datalist id="temp">
+        <option value="12" label="Low"></option>
+        <option value="20" label="Medium"></option>
+        <option value="28" label="High"></option>
+    </datalist>
+    <br> <br> <br>
+</form>
+
+<!-- 폼 요소 그룹핑 fieldset / legend(제목)-->
+<h3> 정보입력</h3>
+<hr>
+<form>
+    <fieldset>
+        <legend>필수항목(모두 입력해주세요)</legend>
+        <input type="email" placeholder="id@host"><br>
+        <input type="url" placeholder="http://"><br>
+        <input type="tel" placeholder="010-123-4567"><br>
+        <input type="search" placeholder="검색어"><br>
+        <input type="submit" value="전송"><br>
+    </fieldset>
+    <small>문의: Tel.010-111-2222</small>
+</form>
+</body>
+</html>

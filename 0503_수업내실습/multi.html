@@ -1,0 +1,65 @@
+<!-- 
+<img> : 이미지가 문서에 포함되지 않고 링크된다.
+   속성
+   - src : source
+   - height, width : px, % 크기 지정
+   - title : 이미지 위에 마우스 올리면 나타나는 설명
+   - alt : 대체 텍스트, 그림이 렌더링되지 못할 때 나타날 문자열
+
+   절대경로
+   상대경로
+      - . :  자기자신
+      - .. : 한 수준 위
+
+[favicon 적용]
+ 1. 이미지: *.ico   또는 일반이미지(png, jpg)
+ 2. 적용: *ico -> 바로 적용
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="favicon" href="favicon.ico">
+    <link rel="icon" href="favicon.ico">
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>멀티미디어 연습</title>
+    <link rel="shortcut icon" href="./배포/img/rain.png">
+</head>
+<body>
+<img src="./img/p4.jpg" width="500px" title="컵케이크" alt="파운드케이크,컵케이크">
+
+<!-- video tag : mp4, ogg, webM
+    : autoplay, controls, loop, muted, 
+    : width/ height  지정 가능
+    <source> : 여러 미디어 리소스 지정에 사용
+       type: video/mp4, video/ogg, video/webm
+-->
+<br>
+<video src="./media/ch1.mp4" width="200px" controls autoplay muted loop>
+</video>
+
+<!-- 브라우저가 재생 가능한 타입을 선택할 수 있게 한다. -->
+<video width="200px" controls autoplay muted loop>
+    <source src="./media/ch1.mp4" type="video/mp4">
+    <source src="./media/ch1.ogg" type="video/ogg">
+    브라우저가  video 태그를 지원하지 않습니다.
+</video>
+
+<!-- audio 
+: autoplay, controls, loop, muted, 
+    : width/ height  지정 가능
+-->
+<br>
+<audio src="./media/kakao.mp3" autoplay controls></audio>
+
+<br>
+<!-- iframe -->
+<ul>
+    <li>네이버 바로가기</li>
+    <li>구글 바로가기</li>
+</ul>
+
+<iframe width="792" height="446" src="https://www.youtube.com/embed/kC4st0SvqqQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>

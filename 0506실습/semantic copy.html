@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* * : all 
+        태그에는 display 속성을 표시: block 또는 inline */
+        * {margin:0; padding:0; height: 100%;}
+        header{width:100%; height:20%; background:yellow;}
+        h1{width:15%; float:left;}
+        nav{width:15%; height:10%; background: orange;float:right;}
+        li{display: inline;}
+        section{width:75%;height:75%;background: olive;float:left;}
+       /* article{width:75%;height:35%; background: lightblue;float:left;}*/
+        aside{width:25%; height:75%;background:plum;float:left;}
+        footer{width:100%; height:5%; clear:both; background:pink;}
+    </style>
+</head>
+<body>
+<!--페이지나 섹션의 머리말을 표현.(제목, 간단한 소개 설명) 
+<section> , <article> 안에서도 사용 가능 
+<head> 랑 다르다. -->
+
+    <header>
+    <!-- 로고 -->
+    <h1>
+        <a href="#">logo</a>
+        <img>
+    </h1>
+    <!-- 목차 -->
+    <nav>
+        <ul>
+            <li>메뉴1</li>
+            <li>메뉴2</li>
+        </ul>
+    </nav>
+
+    </header> 
+
+    
+
+
+<!-- 책의 챕터(장) 개념, -->
+<section>section 영역</section>
+<!-- 독립적인 콘텐츠 -->
+<!--article>article 영역</article-->
+<!-- 문서의 주요부분에서 벗어난 내용, 화면 구성에서 오른쪽,왼쪽 배치-->
+<!--main role="main">
+    <section>
+        <h2>ddd</h2>
+        <p>dfsdfs</p>
+    </section>
+    <article>
+        <h3>dddd</h3>
+        <p>dfsdfds</p>
+    </article>
+</main-->
+<aside>aside 영역</aside>
+<!-- 저자, 저작권, 주소, 연락처 -->
+<footer>footer 영역</footer>
+
+<!-- div : division maker (영역만들기 ) => 블록이다!!
+     비슷: span -->
+<!--div id="nav"></div>
+<nav></nav-->
+</body>
+</html>
