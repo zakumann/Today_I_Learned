@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <style>
+        /*section{border:1px solid red;}*/
+        .fakeimg{height: 200px;
+        background-color: #aaa;}
+    </style>
+</head>
+<body>
+    <header class="bg-primary text-white text-center p-5">
+        <h1>My First Bootstrap 5 Page</h1>
+        <p>Resize this responsive page to see the effect!</p>
+    </header>
+    <!-- nabvar expand-sm: sm에서 수직 정렬 -->
+    <nav class="navbar bg-dark navbar-dark navbar-expand-sm">
+        <div class="container=fluid"><!--width : 100%-->
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link active" href="#">Activate</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+                <li class="nav-item"><a class="nav-link disabled"  href="#">Disabled</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section class="container mt-5">
+        <div class="row">
+            <aside class="col-sm-4">
+                <h2>About Me</h2>
+                <p class="h5">Photo of me: </p>
+                <div class="fakeimg">Fake Image</div>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                <h3>Some Links</h3>
+                <!-- nav: 간단한 수평메뉴
+                flex-column: 항상 세로 메뉴
+                nav-pills: active에 테두리 넣기
+             -->
+                <ul class="nav nav-pills flex-column">
+                    <li class="nav-item"><a class="nav-link active" href="#">Active</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Disabled</a></li>
+                </ul>
+                    <!-- 미디어쿼리는 지정된 중단점보다 큰 화면 너비에 영향을 준다. -->
+                <hr class="d-sm-none">
+            </aside>
+            <article class="col-sm-8">
+                <h2>TITLE HEADING</h2>
+                <!-- <h5>Title description, Dec 7, 2022</h5> -->
+                <p class="h5">Title description, Dec 7, 2022</p>
+                <div class="fakeimg">Fake Image</div>
+                <p>some text...</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint assumenda alias, harum obcaecati recusandae tempora magni sunt tempore doloribus? Soluta minima ex magni officiis perferendis? Consequuntur, nihil earum. Eius, praesentium?</p>
+
+                <h2>TITLE HEADING</h2>
+                <!-- <h5>Title description, Dec 7, 2022</h5> -->
+                <p class="h5">Title description, Dec 7, 2022</p>
+                <div class="fakeimg">Fake Image</div>
+                <p>some text...</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint assumenda alias, harum obcaecati recusandae tempora magni sunt tempore doloribus? Soluta minima ex magni officiis perferendis? Consequuntur, nihil earum. Eius, praesentium?</p>
+            </article>
+        </div>
+    </section>
+    <footer class="bg-dark text-white d-flex justify-content-between align-items-center p-4 mt-5">
+        <p>footer</p>
+        <div>
+            <i class="ms-3 bi bi-twitch"></i>
+            <i class="ms-3 bi bi-twitter"></i>
+            <i class="ms-3 bi bi-facebook"></i>
+            <i class="ms-3 bi bi-youtube"></i>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>
