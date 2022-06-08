@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const date = new Date()
+        const hours = date.getHours()
+        if(hours < 11){
+            alert(`아침식사 시간입니다.`)
+        }
+        else if(hours <= 17){
+                alert("점심식사 시간입니다.")
+            }
+            else{
+                alert("저녁식사 시간입니다.")
+            }
+
+            switch(true){
+                case hours<11:
+                alert("아침식사")
+                break;
+                case hour<15:
+                alert("점심식사")
+                break;
+                default:
+                alert("저녁식사")
+                break;
+            }
+    </script>
+</body>
+</html>
+
