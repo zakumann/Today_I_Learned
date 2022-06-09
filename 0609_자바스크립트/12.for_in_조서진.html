@@ -1,0 +1,42 @@
+<!-- for문
+1) for문에는 총 3가지가 있다.
+2) for in / for of 는 배열에서 사용. 
+for -->
+
+<!-- for문 기본구조  -->
+<!-- for(const i in fask(배열객체) ){
+    실행문장
+} -->
+
+<!-- for (let i=0; i < 100; i++){
+
+       console.log(i);) 
+
+→ 인덱스(i) = 0부터 시작해서 100 이전의 수까지 반복할 거고,
+i는 1씩 커지며 증가할거다 (i++) 이때 i를 출력해라
+→ 결과값 : 0, 1, 2, 3, 4, 5 ... 99 -->
+
+<!-- 배열을 쓸 경우에만 let 말고 const도 사용가능하다. (예외) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const fruits =["사과","딸기","수박","참외"]
+        for(const i in fruits){
+            // console.log(fruits[i])
+            // console.log(i)
+            console.log(`${i}번째 인덱스의 과일은 ${fruits[i]}`)
+        }
+        // 마지막에 배열로 작성하였다.
+        // 배열 = [요소, 요소, 요소]
+        // for_in은 index(0,1,2)를 가져온다.
+    </script>
+</body>
+</html>
+
