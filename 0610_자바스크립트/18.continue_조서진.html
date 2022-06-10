@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <Script>
+        for(let j =0; j<10; j++){
+          alert(`${j}번째 반복문`)
+
+          continue
+
+          const tf =confirm("계속하시겠습니까?")
+          if(!tf){
+            break
+      } j = j + 1
+    }
+    // continue가 있으면 아래를 작동하지않고 바로 alert로 시작하게 된다. 
+    // confirm창이 나타나지 않는다.
+    // continue를 사용할때는 많지는 않다.
+    </Script>
+</body>
+</html>

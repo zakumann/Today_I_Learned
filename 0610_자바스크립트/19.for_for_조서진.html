@@ -1,0 +1,61 @@
+<!-- for문을 여러개 사용하여 
+출력 결과물 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <Script>
+        // let k= "*"
+        // for(i=0; i<=9 ; i++){
+        //   document.write(`${k}<br>`)
+        //    k = k+"*"
+        // }
+        let result="" //변수 선언
+        for(let i=1; i<10; i++){
+            for(let j=0; j<i; j++){
+            result += "*"  //첫 번째 시행
+        }
+            result += "\n" //두 번째 시행
+    }
+        console.log(result)
+        // \n이면 다음줄로 넘어갈 수 있다.
+    </Script>
+</body>
+</html>
+
+<!-- 중첩반복문 -->
+<!-- for(초기조건1; 종결조건1; 증감식1)			//외부 반복문
+    {	for(초기조건2; 종결조건2; 증감식2)		//내부 반복문	
+    {    		
+        반복할 명령문;	
+    }
+}
+내부 반복문의 루프가 끝나고 나면 외부 반복문이 '한 번 증가' 또는 '감소'한다. -->
+
+<!-- += 넣는이유
+result가 문자열 자료형 변수
+원래 문자열은 
+name = "벽" + " " + "이죵"
+결과값: 벽 이죵
+name = "벽"+""+"이죵"
+결과값: 벽이죵
+
+result += "*" 
+의미는 아래와 같다.
+result = result + * (1) (3,4) (6,7,8)
+result = result + \n  (2) (5) (9)
+
+(1) 에서는 *
+(2) 에서는 \n
+(3) 에서는 *
+(4) 에서는 *
+(5) 에서는 \n
+결과값: *\n**\n***  -->
+
+
+

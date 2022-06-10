@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <Script>
+    //   for(let j =0; j<10; j++){
+    //       alert(`${j}번째 반복문`)
+    //       break;
+    //   }
+    // while에 true를 이용하여 무한반복을 하되, for를 이용하여 조건을 만들어 줄 수 있다.
+    for(let j =0; j<10; j++){
+          alert(`${j}번째 반복문`)
+          const tf =confirm("계속하시겠습니까?")
+          if(!tf){
+            break
+      } j = j + 1
+    }
+    // 10번을 반복하되, 0이 첫번째가 될 것이고 tf(조건)이 true일 경우 break가 되며, 만약 tf가 false일 경우는 j = j+1이 된다.
+    // 결과:  0 번째 반복문 -> 확인 -> 계속하시겠습니까? -> 확인 -> 2번째 반복문
+    </Script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!-- 함수 (function)
+익명함수, 선언적 함수, 프로시저함수, 수학적함수 
+크게는 익명함수, 선언적 함수
+형태에 따라 프로시저 함수, 수학적 함수.-->
+<!-- 
+수학적함수: 매개변수가 있어서 연산하는 것.  -->
+
+<!-- 
+1) 과거 함수 기본구조(선언적 함수- 선언적 함수도 매개변수를 받을 수 있음)
+function 함수명(){
+    실행문
+    실행문
+}
+
+ex) function f(){
+
+}
+함수명()
+
+2) 현재 함수 기본구조 (익명함수)
+함수 기본구조
+const 함수명 = function(){
+    실행문
+    실행문
+}
+함수명() //호출 -->
+
+<!-- y = x + 5 
+x = 5 y = 10
+이것을 프로그래밍적으로 바꾸면
+const f = function(){
+    y =x +5
+}
+f(5) -->
+<!-- 1~10까지 더하는 것을 for문 말고도 1~100자리, 1~1000자리를 for문 만으로 할려고 하면 지저분해지기 때문에
+function 이용. 함수를 이용하면 가독성이 좋아진다.
+const f = function(){
+    for(){
+        i = i+1
+    }
+}
+f(5) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script> 
+    //1) 프로시저 함수
+        const f =function(){    //함수 선언, 익명 함수라고 한다.
+            console.log("실행문1")
+            console.log("실행문2")
+            console.log("실행문3")
+        }
+        f() //함수 호출
+    //    console.log(f) //console.log로도 함수를 호출 할 수 있다. 다만, 함수 내용을 보여준다.
+    // 2) 수학적 함수
+    // const fk =function(x){  
+    //        return x +5
+    //     }
+    //     console.log(fk(5))
+    // 5라는 매개변수가 있으며 const fk에 5가 전달되고 5+5=10 으로 되고, console.log가 10으로 나타나게 된다.
+    </script>
+</body>
+</html>
