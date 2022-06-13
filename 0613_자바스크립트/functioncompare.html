@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var num1 = parseInt(prompt("첫 번째 숫자 : "));
+        var num2 = parseInt(prompt("두 번째 숫자 : "));
+
+        function compareNumber(num1, num2){
+            if(num1 == num2){
+                alert(num1 + "과 " + num2 + "는 같다.");
+            }else if(num1 > num2){
+                alert(num1 + "은 " + num2 + "보다 크다.");
+            }else{
+                alert(num2 + "은 " + num1 + "보다 크다.");
+            }
+        }
+
+        compareNumber(num1, num2);
+    </script>
+</body>
+</html>
