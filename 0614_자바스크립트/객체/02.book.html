@@ -1,0 +1,36 @@
+<!-- 생성자 함수로 객체 생성하기 -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>도서 관리 프로그램 - 객체 만들기</title>
+	<link rel="stylesheet" href="css/book.css">
+</head>
+<body>
+<script>
+	// 1단계 : Book 객체를 정의함
+	function Book(title, author, volume, price){
+		this.title = title;
+		this.author = author;
+		this.volume = volume;
+		this.price = price;
+	}
+
+	//2단계 : 인스턴스 생성하기
+	var css = new Book("CSS3 튜토리얼", "Kim", 600, 30000);
+
+	//3단계 : 여러 인스턴스를 배열에 담아 활용하기
+	var html = new Book("웹 표준의 정석", "Kim", 600, 30000);
+	var python = new Book("점프 투 파이썬", "Kim", 600, 30000)
+
+	var bookList = [css, html, python];
+
+	document.write("<h1>책 제목 가져오기</h1>");
+	for (var i = 0; i< bookList.length; i++){
+		document.write("<p>" + bookList[i].title + "(" + bookList[i].price + "원)" + "</p>");
+	}
+</script>
+</body>
+</html>
