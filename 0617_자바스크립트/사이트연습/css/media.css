@@ -1,0 +1,137 @@
+/* media.css */
+/* 기준 해상도는 공식이나 정해져 있는 너비가 따로 없기 때문에 진행하는 프로젝트 디자인에 맞춰 설정하면 됩니다. */
+/* font-size 속성이나 margin, padding 속성은 전부 rem 단위를 사용했습니다. rem 단위는 root, 즉 html 태그의 font-size 속성값에 영향을 받는 단위입니다. html 태그는 기본 font-size 속성값이 16px이므로 1rem이라면 16(px) × 1(rem) = 16px이 됩니다. 이러한 rem 단위의 특징을 이용해 반응형이 적용되는 뷰포트마다 기준이 되는 html 태그의 font-size 속성값을 작게 하면 화면 너비가 줄어들수록 전체 텍스트 크기와 내외부 여백이 일정 비율로 줄어듭니다 */
+
+@media screen and (max-width: 1140px){
+
+  /* 메인 container 기준 1140 -> 992px */
+  main .container{
+    width: 992px;
+  }
+  
+  /* 섹션 container 기준 1140 -> 600px */
+  section .container{
+    width:600px;
+  }
+
+  /* 해상도 1140px 이하일 때 About Me 영역 */
+  /* About me 영역 왼쪽을 너비를 50% -> 100% 변경 */
+  section .about-self .left{
+    width:100%;
+    margin-bottom: 1.5rem;
+  }
+  /* About me 영역 오른쪽 너비를 50% -> 100% 변경 */
+  section  .about-self .right{
+    width:100%;
+    padding:0;
+  }
+
+  /* 원래 What I Do 영역의 본문은 사각형 하나가 전체 너비의 30%를 차지하고 있어서 수평 방향으로 사각형 3개가 나란히 배치되는 구조였습니다. 그런데 container 클래스의 기준 너비가 1140px에서 600px로 변경되면서 사각형 3개를 수평 배치하기가 어려워졌습니다. 그래서 사각형 너비를 48%, 사각형 사이 간격을 4%로 지정해서 수평 방향으로 사각형 2개를 나란히 배치하도록 수정합니다.
+ */
+  /* What I Do 영역의 콘텐츠 박스의 너비를 30% -> 48% 변경 */
+  section .do-me .do-inner{
+    width:48%;
+    margin-bottom: 1.5rem;
+    margin-right: 0;
+  }
+
+  section .do-me .do-inner:nth-child(2n+1){
+    margin-right:4%; /* 1, 3, 5...번째 본문 사각형에 margin-right 4% 적용 */
+  }
+  
+  /* PortFolio 영역의 콘텐츠 박스 너비를 30% ->  48% 변경 */
+  section .portfolio-me .portfolio-inner{
+    width:48%;
+    margin-right: 0;
+  }
+
+  section .portfolio-me .portfolio-inner:nth-child(2n+1){
+    margin-right:4%;
+  }
+
+  /* Contact With Me 영역 */
+  section.contact .contact-me .left{
+    width:100%; /* 너비 변경 30% -> 100% */
+  }
+  
+  section.contact .contact-me .right{
+    width:100%;/* 너비 변경 65% -> 100% */
+    margin-left: 0; /* margin 초기화 */
+    
+  }
+}
+
+@media (max-width: 992px){
+  html{
+    font-size: 14px;
+  }
+
+  /* 메인 영역 container 기준 너비 변경 */
+  main .container{
+    width: 768px; /* 992px -> 768px */
+  }
+
+  /* PortFolio 영역 */
+  section .portfolio-me .portfolio-inner{
+    width:100%; /* 48% -> 100% 변경 */
+  } 
+}
+
+/* What I Do 영역은 기준 너비가 768px 이하로 줄어들면 본문 너비가 100%로 변경되어 모든 콘텐츠가 수직 방향에 한 줄로 배치 */
+@media (max-width: 768px){
+  html{
+    font-size: 13px;
+  }
+  
+  /* 메인 영역 container 기준 너비 변경 */
+  main .container{
+    width: 576px; /* 768px -> 576px */
+  }
+
+  section .container{
+    width:400px; /* 600px -> 400px */
+  }
+
+  section .do-me .do-inner{
+    width:100%; /* 48% -> 100% */
+    margin-right: 0; /* margin 초기화 */
+  }
+}
+
+/* container 클래스의 기준 너비를 바꾸는 것 말고 다른 처리는 하지 않습니다 */
+@media (max-width: 576px){
+  
+  html{
+    font-size: 12px;
+  }
+
+  main .container{
+    width: 400px; /* 576px -> 400px */
+  }
+
+  section .container{
+    width:360px; /* 400px -> 360px */
+  }
+}
+
+/* container 클래스의 기준 너비만 바꾸면 메인 영역의 글자 비율이 줄어들어도 현재 해상도에서는 큰 편이어서 font-size 속성을 기존보다 조금 작게 재설정 */
+@media (max-width: 400px){
+  
+  html{
+    font-size: 11px;
+  }
+  main .container{
+    width: 320px;/* 400px -> 320px */
+  }
+
+  main h4{
+    font-size: 1.5rem;
+  }
+  section .container{
+    width: 320px;/* 360px -> 320px */
+  }
+  section .title h2{
+    font-size: 3rem; /* 3.5rem -> 3rem */
+  }
+}
+/* End media.css */

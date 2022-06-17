@@ -1,0 +1,9 @@
+/* background.css */
+/*  background-attachment 속성을 fixed로 지정하면 웹 페이지를 스크롤할 때 배경이 고정됨 */
+.bg{
+  background:url('../images/background.jpg') center center;
+  background-size:cover;
+  background-attachment:fixed;
+  height:650px;
+}
+/* End background.css */

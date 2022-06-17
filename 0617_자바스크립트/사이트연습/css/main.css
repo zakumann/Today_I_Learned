@@ -1,0 +1,84 @@
+/* main.css */
+/* import 구문은 항상 CSS 파일의 맨 윗줄에 작성  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Varela+Round&display=swap');
+main{
+  width:100%;
+  height:100vh;
+  color:white;
+  background:linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('../images/me.jpg') center center;/* 배경색이 이미지를 덮는 효과*/
+  background-size:cover;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+}
+main h4{
+  font-size:2rem;
+}
+main h2{
+  font-size:3.5rem;
+  margin:2rem 0;
+  letter-spacing:3px;
+  font-family:'Varela Round', sans-serif; /* 웹 폰트 추가 */
+}
+main p{
+  max-width:500px;
+  margin:0 auto;
+  font-size:1.25rem;
+}
+main button.download{
+  background-color:transparent;
+  border:3px solid white;
+  border-radius:20px;
+  padding:1rem 2rem;
+  margin-top:3rem;
+  color:white;
+  font-weight:bold;
+  cursor:pointer;
+}
+/*  아이콘 폰트로 추가한 마우스 모양의 버튼에 스타일 속성을 추가
+마우스가 위아래로 움직이는 애니메이션을 구현 */
+main button.mouse{
+  background-color:transparent;
+  border:none;
+  color:white;
+  font-size:2rem;
+  position:absolute;
+  bottom:1rem;
+  left:50%;
+  transform:translateX(-50%);
+  animation:upDown 1s ease-in-out infinite;
+  cursor:pointer;
+}
+@keyframes upDown{
+  0%{
+    bottom:1rem;
+  }
+  50%{
+    bottom:1.5rem;
+  }
+  100%{
+    bottom:1rem;
+  }
+}
+
+/*  텍스트 타이핑 효과 구현하기-메인 화면의 글자가 지워졌다가 다시 채워지는 기능
+ ::after 가상 요소 선택자로 텍스트 마지막에 너비 3px, 높이 40px 크기의 배경색이 투명한 막대(bar)를 만듭니다. 
+ 그리고 애니메이션을 넣어서 막대 부분이 커서가 깜빡이는 것처럼 보이게 구현합니다.
+  */
+main h2 span::after{
+  content:"";
+  height:40px;
+  width:3px;
+  background-color:#fff;
+  display:inline-block;
+  animation: blink .7s ease-in-out infinite;
+}
+@keyframes blink {
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}

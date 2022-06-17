@@ -1,0 +1,51 @@
+/* what_i_do.css */
+
+/* 제목은 전체 스타일에 적용하게 작성했으므로 What I Do 영역의 제목에도 같은 디자인이 적용되어서 표시 
+ do-inner 클래스로 그룹 지은 본문만 스타일을 작성*/
+
+/* float 속성 해제*/
+section .do-me::after{
+  content:"";
+  display:block;
+  clear:both;
+}
+/* 사각형 크기와 간격, 내부 여백 설정 */
+/* 사각형이 3개이므로 전체 너비의 90%가 됩니다. 그리고 첫 번째 사각형과 두 번째 사각형은 오른쪽에 너비의 5%씩 외부 여백을 주도록 margin-right 속성을 적용합니다. 이렇게 하면 총 100%가 되어 전체 너비를 사용
+첫 번째와 두 번째 사각형에 각각 margin-right 속성을 지정하지 않아도 됩니다. do-inner 클래스를 가지고 있는 div 태그에 모두 margin-right 속성을 적용하고 :last-child 가상 클래스 선택자로 마지막 사각형의 margin-right 속성만 0으로 설정 */
+section .do-me .do-inner{
+  background-color:#fff;
+  width:30%;
+  padding:2rem; 
+  float:left;
+  margin-right:5%;
+  cursor:pointer;
+}
+/* 마지막 사각형의 외부 여백 설정 */
+section .do-me .do-inner:last-child{
+  margin-right:0;
+}
+/* 아이콘 폰트 크기와 색상 */
+section .do-me .do-inner .icon i{
+  font-size:2.5rem;
+  color:#ff6a6a;
+}
+/* HTML5, CSS3, BootStrap v5.0 텍스트 크기와 간격 */
+section .do-me .do-inner .content h3{
+  font-size:2rem;
+  margin:1rem 0;
+}
+/* 사각형 텍스트 크기 */
+section .do-me .do-inner .content p{
+  font-size:1.15rem;
+}
+/* do-inner 클래스에 마우스를 올리면 배경색과 텍스트 색상 변경 */
+section .do-me .do-inner:hover{
+  background-color:lightcoral;
+  color:white;
+}
+/* do-inner 클래스에 마우스를 올리면 아이콘 폰트 색상 변경 */
+section .do-me .do-inner:hover i{
+  color:white;
+}
+
+/* End what_i_do.css */
