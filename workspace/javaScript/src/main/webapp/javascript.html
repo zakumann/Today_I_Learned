@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+<script>
+	function set_h1(){
+		/*
+		var h1 = document.getElementsByTagName("h1");
+		var str = h1[0].firstChild;
+		str.nodeValue = "JavaScript로 문자열 변경";
+		*/
+		$("h1").text("JQuery로 문자열 변경");
+	}
+	
+	function get_li(){
+		/*
+		var li = document.getElementsByTagName("li");
+		var result = document.getElementById("result");
+		
+		for(var idx in li){
+			var str = li[idx].firstChild;
+			result.innerHTML += str.nodeValue + "<br/>";
+		}
+		*/
+		
+		$("li").each(function(idx, obj){
+			var str = $(obj).text();
+			$("#result").append(str + "<br/>");
+		});
+	}
+</script>
+</head>
+<body>
+	<h1> javaScript 실습</h1>
+	<button onClick="set_h1"> h1 태그문자열 변경 </button>
+	<br/>
+	
+	<ul>
+	<li> 문자열1 </li>
+	<li> 문자열2 </li>
+	<li> 문자열3 </li>
+	</ul>
+	<button onClick="get_li()"> li_태그문자열 가져오기 </button>
+	<div id="result"></div>
+</body>
+</html>
