@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+	$(function(){
+		//$("p[title]").css("background-color", "yellow");
+		//$("p[title = 'aaa1']").css("color", "ornage");
+		//$("p[title != 'aaa1']").css("color", "red");
+		
+		//$("p[title $= 'a3']").css("background-color", "blue");
+		//$("p[title |= 'aaa3']").css("color", "green");
+		//$("p[title ^= 'aaa3']").css("font-size", "30px");
+		
+		$("p[title ~= 'aa']").css("color", "purple");
+		$("p[title *= 'aa']").css("background-color", "yellow");
+		
+				
+	});
+</script>
+
+</head>
+<body>
+    <!-- 
+	<p>속성이 없는 p태그</p>
+	<p title="aaa1">title이 aaa1인 p 태그</p>
+	<p title="aaa2">title이 aaa2인 p 태그</p>
+
+	<p title="aaa3">title이 aaa3인 p 태그</p>
+	<p title="aaa3-test">title이 aaa3-test인 p 태그</p>
+	<p title="aaa3test">title이 aaa3test인 p 태그</p>
+	 -->
+	 
+	<p title="aaa4">title이 aaa4인 p 태그</p>
+	<p title="aaa5">title이 aaa5인 p 태그</p>
+	<p title="aa a6">title이 aa a6인 p 태그</p>
+	<p title="aa">title이 aa인 p 태그</p>
+</body>
+</html>

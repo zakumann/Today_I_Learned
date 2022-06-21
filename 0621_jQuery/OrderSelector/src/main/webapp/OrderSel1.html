@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+	$(function(){
+		//$("p:first").css("background-color", "yellow");
+		//$("p:first-child").css("color","orange");
+		//$("p:first-of-type").css("font-size", "30px");
+		
+		
+		$("p:last").css("background-color", "yellow");
+		$("p:last-child").css("color","orange");
+		$("p:last-of-type").css("font-size", "30px");
+	});
+</script>	
+
+</head>
+<body>
+	<p>태그</p>
+	<hr/>
+	<div>
+		<p>div 안의 p태그</p>
+		<p>div 안의 p태그</p>
+		<p>div 안의 p태그</p>
+	</div>
+	<hr/>
+	<div>
+		<p>div 안의 p태그</p>
+		<p>div 안의 p태그</p>
+		<div>div 안의 div태그</div>
+	</div>
+</body>
+</html>

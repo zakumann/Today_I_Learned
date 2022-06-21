@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+	$(function(){
+		//$(":header").css("color", "red");
+		//$(":focus").css("background-color", "green");
+		//$("div:contains('Hello')").css("font-size", "30px");
+		$("div:has(p)").css("font-style", "italic");
+	});
+</script>
+</head>
+<body>
+	<p>p 태그</p>
+	<h1>h1 태그</h1>
+	<h3>h3 태그</h3>
+	
+	<input type="text" autofocus="autofocus"/><br/>
+	<input type="text"/><br/>
+	
+	<div>Hello World</div>
+	<div>Hello World</div>
+	<div>Hi World</div>
+	
+	<div>
+		<p>p 태그를 가지고 있는 div 태그</p>
+	</div>
+	<div>
+		<div>div 태그를 가지고 있는 div 태그</div>
+	</div>
+	
+</body>
+</html>

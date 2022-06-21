@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+	$(function(){
+		//$("p:eq(0)").css("background-color","yellow");
+		//$("p:nth-child(1)").css("color","orange");
+		//$("p:nth-of-type(1)").css("font-style", "italic");
+		
+		$("p:gt(0)").css("background-color","yellow");
+		$("p:lt(7)").css("color","blue");
+		$("p:nth-last-child(1)").css("font-size","30px");
+		$("p:nth-last-of-type(1)").css("font-style", "italic");
+	});
+</script>
+</head>
+<body>
+	<div>
+		<p>p 태그</p>
+		<p>p 태그</p>
+		<p>p 태그</p>
+	</div>
+	<hr/>
+	<div>
+		<p>p 태그</p>
+		<p>p 태그</p>
+		<p>p 태그</p>
+	</div>
+	<hr/>
+	<div>
+		<p>p 태그</p>
+		<p>p 태그</p>
+		<div>div 태그</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<Script>
+	$(function(){
+		//$("#a1 + div").css("background-color", "yellow");
+		$("#a1 ~ div").css("background-color","yellow");
+	});
+</Script>
+</head>
+<body>
+	<p>p 태그</p>
+	<p>p 태그</p>
+	<p>p 태그</p>
+	<p id="a1">p 태그 a1</p>
+	<div>div 태그1</div>
+	<p>p 태그</p>
+	<p>p 태그</p>
+	<div>div 태그2</div>
+	<p>p 태그</p>
+	<p>p 태그</p>
+	<p>p 태그</p>
+	<p>p 태그</p>
+	<div>div 태그3</div>
+	<p>p 태그</p>
+</body>
+</html>
