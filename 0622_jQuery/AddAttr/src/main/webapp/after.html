@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+	function after1(){
+		$("#a1").after("<p>새롭게 추가한 p태그 1</p>");
+	}
+	
+	function after2(){
+		var p = $("<p>");
+		p.text("새롭게 추가한 p태그 2");
+		$("#a1").after(p);
+	}
+	
+	function before1(){
+		$("#a1").before("<p>새롭게 추가한 p태그 3</p>");
+	}
+	
+	function before2(){
+		var p = $("<p>");
+		p.text("새롭게 추가한 p태그 4");
+		$("#a1").before(p);
+	}
+</script>
+<style>
+	#a1{
+		border : 1px solid black;
+	}
+
+</style>
+</head>
+<body>
+	<div id="a1">
+		<p>p 태그</p>		
+	</div>
+	<button onclick="after1()">HTML 코드를 뒤에 추가</button>
+	<button onclick="after2()">HTML 객체를 뒤에 추가</button>
+	<button onclick="before1()">HTML 코드를 앞에 추가</button>
+	<button onclick="before2()">HTML 객체를 앞에 추가</button>
+</body>
+</html>

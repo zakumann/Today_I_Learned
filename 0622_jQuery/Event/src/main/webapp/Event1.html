@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script>
+	$(function(){
+		$("#a1").click(function(){
+			$("#a1").css("background-color", "black");
+			$("#a1").css("color", "white");
+	});
+		$("#a2").dblclick(function(){
+			$("#a2").css("background-color", "black");
+			$("#a2").css("color", "white");
+	});
+		$("#a3").mouseenter(function(){
+			$("#a3").css("background-color", "black");
+			$("#a3").css("color", "white");
+	});
+		$("#a3").mouseleave(function(){
+			$("#a3").css("background-color", "white");
+			$("#a3").css("color", "black");
+	});
+		$("#a4").mousedown(function(){
+			$("#a4").css("background-color", "white");
+			$("#a4").css("color", "white");
+	});
+		$("#a4").mouseup(function(){
+			$("#a4").css("background-color", "white");
+			$("#a4").css("color", "black");
+	});
+		$("#a5").hover(function(){
+			$("#a5").css("background-color", "black");
+			$("#a5").css("color", "white");
+		}, function(){
+			$("#a5").css("background-color", "white");
+			$("#a5").css("color","black");
+		});
+		
+		$("#a6").focus(function(){
+			$("#a6").css("background-color", "blue");
+		});
+		
+		$("#a6").blur(function(){
+			$("#a6").css("background-color", "red");
+		});
+		
+		$("#a7").on("click", function(){
+			alert('#a7');
+		});
+		
+		$("#a8").one("click", function(){
+			alert('#a8');
+		});
+		
+		$("#a9").on({
+			click : function(){
+				alert('click');
+			},
+			mouseenter : function(){
+				$("#a9").css("background-color", "black");
+			},
+			mouseleave : function(){
+				$("#a9").css("background-color", "white");
+			}
+		});
+		
+		function remove_event(){
+			$("#a7").off("click");
+		}
+	});
+		
+</script>
+</head>
+<body>
+	<h3 id="a1">click</h3>
+	<h3 id="a2">double click</h3>
+	<h3 id="a3">mouse enter/leave</h3>
+	<h3 id="a4">mouse down/up</h3>
+	<h3 id="a5">mouse hover</h3>
+	
+	<input id="a6" type="text"/>
+	
+	<h3 id="a7">on</h3>
+	<button type="button" onclick="remove_event()">이벤트 제거</button>
+	<br/>
+	
+	<h3 id="a8">one</h3>
+	
+	<h3 id="a9">event setting</h3>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+	function append1(){
+		$("#a1").append("<p>새롭게 추가한 p1</p>");
+	}
+	
+	function append2(){
+		var p = $("<p>");
+		p.text("새롭게 추가한 p2");
+		
+		$("#a1").append(p);
+	}
+	
+	function prepend1(){
+		$("#a1").prepend("<p>새롭게 추가한 p3</p>");
+	}
+	
+	function prepend2(){
+		var p = $("<p>");
+		p.text("새롭게 추가한 p4");
+		
+		$("#a1").prepend(p);
+	}
+	
+</script>
+<style>
+	#a1{
+		border : 1px solid black;
+	}
+
+</style>
+</head>
+<body>
+	<div id="a1">
+		<p>p 태그</p>		
+	</div>
+	<button onclick="append1()">HTML 코드를 뒤에 추가</button>
+	<button onclick="append2()">HTML 객체를 뒤에 추가</button>
+	<button onclick="prepend1()">HTML 코드를 앞에 추가</button>
+	<button onclick="prepend2()">HTML 객체를 앞에 추가</button>
+</body>
+</html>

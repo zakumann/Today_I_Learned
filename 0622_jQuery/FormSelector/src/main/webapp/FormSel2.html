@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script>
+	$(function(){
+		$(":enabled").css("background-color", "yellow");
+		$(":disabled").css("background-color", "red");
+	});
+</script>
+</head>
+<body>
+	<input type="text"/>활성 상태<br/>
+	<input type="password"/>활성 상태<br/>
+	<input type="text", disabled="disabled"/>비활성 상태<br/>
+	<input type="password", disabled="disabled"/>비활성 상태<br/>
+</body>
+</html>
