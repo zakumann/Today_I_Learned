@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+	function div_slideup(){
+		$("#a1").slideUp("slow");
+	}
+	
+	function div_slidedown(){
+		$("#a1").slideDown("slow");
+	}
+	
+	function div_slidetoggle(){
+		$("#a1").slideToggle("slow");
+	}
+</script>
+<style>
+	#a1{
+		border : 1px solid black;
+		background-color : yellow;
+		width : 200px;
+		height : 200px;
+	}
+</style>
+</head>
+<body>
+	<button onclick="div_slideup()">slide up</button>
+	<button onclick="div_slidedown()">slide down</button>
+	<button onclick="div_slidetoggle()">slide toggle</button>
+	<div id="a1"></div>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+	function setSize(){
+		$("#a1").animate({
+			width : 400,
+			height : 400,
+		}, "slow");
+	}
+	
+	function setOpacity(){
+		$("#a1").animate({
+			opacity : 0
+		}, "slow");
+	}
+	
+	function setPosition(){
+		$("#a1").animate({
+			left : 100,
+			top : 100
+		}, "slow");
+	}
+	
+	function setBackgroundColor(){
+		$("#a1").animate({
+			backgroundColor : "red"
+		}, "slow");
+	}
+		
+	function setTotal(){
+		$("#a1").animate({
+			width : 400,
+			height : 400,
+			opacity : 0.5,
+			left : 100,
+			top : 100
+		}, "slow");
+	}
+	
+	function setSequence(){
+		$("#a1").animate({
+			width : 400,
+			height : 400
+		}, "slow").animate({
+			left : 100,
+			top : 100
+		},"slow").animate({
+			opacity : 0.2
+		},"slow");
+	}
+	
+	/*
+	function setSequence(){
+		$("#a1").animate({
+			width : 400,
+			height : 400
+		}, "slow").animate({
+			left : 100,
+			top : 100
+		},"slow").animate({
+			opacity : 0.2
+		},"slow");
+	}*/
+</script>
+<style>
+	#a1{
+		border : 1px solid black;
+		background-color : yellow;
+		width : 200px;
+		height : 200px;
+		position : relative;
+	}
+</style>
+</head>
+<body>
+	<button onclick="setSize()">size 설정</button>
+	<button onclick="setOpacity()">투명도 조절</button>
+	<button onclick="setPosition()">위치 이동</button>
+	<button onclick="setBackgroundColor()">배경색 설정</button>
+	<button onclick="setTotal()">종합 설정</button>
+	<button onclick="setSequence()">순차 설정</button>
+	<div id="a1"></div>
+</body>
+</html>

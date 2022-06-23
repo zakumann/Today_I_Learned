@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<data>
+		<str1>문자열 1-1</str1>
+		<str2>문자열 1-2</str2>
+	</data>
+	<data>
+		<str1>문자열 2-1</str1>
+		<str2>문자열 2-2</str2>
+	</data>
+	<data>
+		<str1>문자열 3-1</str1>
+		<str2>문자열 3-2</str2>
+	</data>
+</root>

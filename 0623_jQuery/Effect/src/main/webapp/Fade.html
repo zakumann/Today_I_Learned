@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+	function div_fadeout(){
+		$("#a1").fadeOut(3000);
+	}
+	
+	function div_fadein(){
+		$("#a1").fadeIn(3000);
+	}
+	function div_fadetoggle(){
+		$("#a1").fadeToggle("slow");
+	}
+	function div_fadeto(){
+		$("#a1").fadeTo("slow",0.3);
+	}
+</script>
+<style>
+	#a1{
+		border : 1px solid black;
+		background-color : yellow;
+		width : 200px;
+		height : 200px;
+	}
+</style>
+</head>
+<body>
+	<button onclick="div_fadeout()">fade out</button>
+	<button onclick="div_fadein()">fade in</button>
+	<button onclick="div_fadetoggle()">fade toggle</button>
+	<button onclick="div_fadeto()">fade to</button>
+	<div id="a1"></div>
+</body>
+</html>

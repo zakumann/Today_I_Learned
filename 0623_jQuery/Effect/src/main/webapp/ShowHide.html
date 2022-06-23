@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+	function div_hide(){
+		//$("#a1").hide();
+		//$("#a1").hide(1000);
+		$("#a1").hide("slow");
+		//$("#a1").hide("fast");
+	}
+	
+	function div_show(){
+		//$("#a1").show();
+		//$("#a1").show();
+		//$("#a1").show(1000);
+		$("#a1").show("slow");
+	}
+	
+	function div_toggle(){
+		//$("#a1").toggle();
+		$("#a1").toggle(1000);
+		//$("#a1").toggle("slow");
+		$("#a1").toggle("fast");
+	}
+</script>
+<style>
+	#a1{
+		border : 1px solid black;
+		background-color : yellow;
+		width : 200px;
+		height : 200px;
+	}
+</style>
+</head>
+<body>
+	<button onclick = "div_hide()">hide</button>
+	<button onclick = "div_show()">show</button>
+	<button onclick = "div_toggle()">toggle</button>
+	<div id="a1"></div>
+</body>
+</html>

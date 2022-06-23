@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+	$(function(){
+	$("#a1").next().css("border-color", "red");
+	$("#a1").nextAll().css("border-style", "dotted");
+	$("#a1").nextUntil("#a2").css("border-width", "4px");
+});
+</script>
+<style>
+	div{
+		border : 2px solid black;
+		padding : 10px;
+		margin-bottom : 10px;
+	}
+</style>
+</head>
+<body>
+	<div>div 1</div>
+	<div id="a1">div 2</div>
+	<div>div 3</div>
+	<div>div 4</div>
+	<div id="a2">div 5</div>
+</body>
+</html>
