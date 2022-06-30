@@ -1,0 +1,42 @@
+body {
+  background: url(https://camo.githubusercontent.com/bcae277e88b0b3e72e4340030547d4a5e43f32ac8717bd8378cc50d6ab1672e3/68747470733a2f2f6d656469612e77697265642e636f2e756b2f70686f746f732f3630366462613163396131356637336135393761326161312f6d61737465722f775f31363030253243635f6c696d69742f776561746865722e6a7067);
+  height : 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.weather-card{
+  background-color: rgba(52,52,52,.7);
+  padding: 50px;
+  border: 2px solid #fff;
+  border-radius: 20px;
+  max-width: 700px;
+  width:100%;
+  height: 300px;
+}
+.main-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+
+}
+.menu-container{
+  display: flex;
+  justify-content: center;
+  background-color: #000;
+  border-radius: 60px;
+  max-width: 700px;
+  width:100%;
+  padding: 30px;
+  margin-top: 30px;
+
+}
+.menu-container Button{
+  margin-right:30px;
+}
+
+.menu-container Button:hover{
+  background-color: #ffc107;
+}
