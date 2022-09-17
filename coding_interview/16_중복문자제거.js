@@ -13,11 +13,10 @@
 
 function solution(str){
     let answer="";
-    //console.log(str.indexOf('k'));
-    for(let i=0;i<str.length;i++){
+    for(let i=0; i<str.length; i++){
         // console.log(str[i],i,str.indexOf(str[i]));
         if(i===str.indexOf(str[i])){
-            answer+=str[i];
+           answer+=str[i];
         }
     }
 

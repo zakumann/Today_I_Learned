@@ -1,6 +1,6 @@
-function solution(s){
+function solution(str){
     let answer="";
-    for(let i of s){
+    for(let i of str){
         if(i===i.toUpperCase()){
             answer+=i.toLowerCase();
         }else {
