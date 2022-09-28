@@ -12,7 +12,6 @@ function solution(s){
                 cnt=1;
             }
         }
-    
     }
     return answer;
 }
