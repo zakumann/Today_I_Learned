@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Quiz</title>
+</head>
+<body>
+    <div class="lab">
+        <h3>숫자 맞추기 게임</h3>
+        <p>이 게임은 컴퓨터가 생성한 수사를 맞추는 게임입니다.</p>
+        <form action="">
+            Number:
+            <input type="text" id="user" size="5">
+            <input type="button" value="confirm" onclick="guess();">
+            <input type="button" value="replay" onclick="replay();">
+            <br><br>
+            Guess Time:
+            <input type="text" id="guesses" size="5">
+            Hint:
+            <input type="text" id="result" size="16">
+            <input type="text" id="test" size="16">
+        </form>
+    </div>
+    <script>
+    const guess = () => {
+    var inputNum =parseInt(document.getElementById("user").value);
+        document.getElementById("guesses").value = ++nGuesses;
+    if (inputNum<computerNumber) 
+        document.getElementById("result").value = "낮습니다.";
+    else if(inputNum>computerNumber)
+        document.getElementById("result").value = "높습니다.";
+    else
+        document.getElementById("result").value = "정답입니다.";
+
+}
+
+    const replay = () => {
+            nGuesses = 0;
+            computerNumber = Math.floor(Math.random()*100 +1);
+            document.getElementById("result").value = "";
+            document.getElementById("guesses").value = "";
+            document.getElementById("test").value = computerNumber;
+
+        }
+    </script>
+</body>
+</html>
