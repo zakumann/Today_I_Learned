@@ -50,3 +50,13 @@ a	X
 function solution(arr) {
     return arr.reduce((list, num) => [...list, ...new Array(num).fill(num)], []);
 }
+
+/*
+function solution(arr) {
+    var answer = [];
+    for(let n = 0; n < arr.length; n++) {
+        answer = answer.concat(new Array(arr[n]).fill(arr[n]))
+    }
+    return answer;
+}
+*/
