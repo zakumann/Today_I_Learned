@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a = [10,3,1,4,2]
+        for(i = 0;i<a.length;i++){
+            for(j=a.length-1;j>i;j--){
+                if(a[j] < a[j-1]){
+                    var tmp = a[j];
+                    a[j] = a[j-1];
+                    a[j-1] = tmp;
+                }
+            }
+        }
+        document.writeln("Bubble sort = ",a);
+    </script>
+</body>
+</html>
