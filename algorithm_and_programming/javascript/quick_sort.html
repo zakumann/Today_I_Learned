@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function quickSort(startID, endID){
+            var pivot = a[Math.floor((startID + endID)/2)];
+            var left = startID;
+            var right = endID;
+            while(true){
+                while(a[left]<pivot){
+                    left++;
+                }
+                while(pivot<a[right]){
+                    right--;
+                }
+                if(right <= left){
+                    break;
+                }
+                var tmp = a[left];
+                a[left] = a[right];
+                a[right] = tmp;
+                left++;
+                right--;
+            }
+            if(startID < left-1){
+                quickSort(startID, left - 1);
+            }
+            if(right +1 < endID){
+                quickSort(right+1, endID);
+            }
+        }
+        a = [10,3,1,9,7,6,8,2,4,5];
+        quickSort(0, a.length -1);
+        document.writeln("Quick Sort = "+a)
+    </script>
+</body>
+</html>
