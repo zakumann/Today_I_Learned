@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Timmana&display=swap"');
+
+:root {
+    --text-color: #000000;
+    --text-background-color: #ffffff;
+    --border-color: #000000;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family:'Courier New', Courier, monospace;
+    font-size: 22px;
+    color: var(--text-color);
+}
+#mainbox {
+    width: 90vmin;
+    height: 60vmin;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-size: cover;
+    border: 0.125vmin solid var(--border-color)
+}
+#textbox {
+    border: 0.125vmin solid var(--border-color);
+    background: var(--text-background-color);
+    width: 95%;
+    height: 20%;
+    padding: 0.5rem;
+    overflow: auto;
+    word-break: break-word;
+    margin: auto;
+    position: absolute;
+    bottom: 2%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+#optionsbox{
+    color: blue;
+}
+
+#optionsbox > div:hover{
+    color: red;
+    cursor: pointer;
+}
+
+#spritebox {
+    /*Sets size*/
+    max-width: 45%;
+
+    /* Positioning in container*/
+    z-index: -1;
+    position: absolute;
+    bottom: 20%;
+}
