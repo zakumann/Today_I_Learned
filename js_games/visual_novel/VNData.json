@@ -1,0 +1,85 @@
+{ 
+    "Characters": {
+        "Novle": {
+        	"default": "pictures/novle.png"
+        }
+    },
+    
+    "Scene1": {
+    	"Background": "/pictures/desktop.jfif",
+    	"PAGES": {
+			"Page0" : {
+				"Character": "Novle",
+				"Sprite": "default",
+				"PageText": "We're having a pop quiz today!"
+				
+			},
+			"Page1" : {
+				"Character": "Novle",
+				"Sprite": "default",
+				"PageText": "And just so you know, the questions were made for me by Miss Smith next door. "
+				
+			},
+			"Page2" : {
+				"Character": "Novle",
+				"Sprite": "default",
+				"PageText": "Ms. Smith's quizzes are always harder than Viola's."
+				
+			},
+			"Page3" : {
+				"Character": "Novle",
+				"Sprite": "default",
+				"PageText": "Yeah..."
+				
+			},
+			"Page4" : {
+				"Character": "Novle",
+				"Sprite": "default",
+				"PageText": "Good luck everyone! I'll be taking the quiz myself."
+				
+			},
+			"Page5" : {
+				"Character": "Novle",
+				"Sprite": "default",
+				"PageText": "..."
+				
+			},
+			"Page6" : {
+				"Character": "Novle",
+				"Sprite": "default",
+				"PageText": "........."
+				
+			},
+			"Page7" : {
+				"Character": "Novle",
+				"Sprite": "default",
+				"PageText": "Hey, she's having trouble!"
+				
+			},
+			"Page8" : {
+				"Character": "Novle",
+				"Sprite": "default",
+				"PageText": "Yikes..."
+				
+			},
+			"Page9" : {
+				"Character": "Novle",
+				"Sprite": "default",
+				"PageText": " ",
+				"Options":
+				{
+					"Finish?": "Page10",
+					"Restart?": "Page0"
+				}
+				
+			},
+			"Page10" : {
+				"Character": "Me",
+				"Sprite": "Thinking",
+				"PageText": "Thank you for reading!",
+				"NextPage": "End"
+				
+			}
+		}
+    }
+}

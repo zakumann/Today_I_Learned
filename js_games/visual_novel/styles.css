@@ -1,60 +1,111 @@
-@import url('https://fonts.googleapis.com/css2?family=Timmana&display=swap"');
-
 :root {
-    --text-color: #000000;
-    --text-background-color: #ffffff;
-    --border-color: #000000;
+  --text-color: #000000;
+  --text-background-color: #ffffff;
+  --border-color: #000000;
 }
-*{
-    padding: 0;
-    margin: 0;
-}
-body {
-    font-family:'Courier New', Courier, monospace;
-    font-size: 22px;
-    color: var(--text-color);
-}
-#mainbox {
-    width: 90vmin;
-    height: 60vmin;
 
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-size: cover;
-    border: 0.125vmin solid var(--border-color)
+*{
+	padding:0;
+	margin:0;
 }
+
+body{
+	/*Basic Font Styling*/
+	font-family: 'Arial', sans-serif;
+	font-size:22px;
+	color: var(--text-color);
+}
+
+#mainbox {
+	/*Size of Main Container*/
+	width: 90vmin;
+	height: 60vmin;
+	
+	/*Places container in the center of the screen*/
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	
+	/*Sets selected background to cover the whole main container*/
+	background-size: cover;
+	
+	/*Sets a border*/
+	border: 0.125vmin solid var(--border-color);
+}
+
 #textbox {
-    border: 0.125vmin solid var(--border-color);
-    background: var(--text-background-color);
-    width: 95%;
-    height: 20%;
-    padding: 0.5rem;
-    overflow: auto;
-    word-break: break-word;
-    margin: auto;
-    position: absolute;
-    bottom: 2%;
-    left: 50%;
-    transform: translate(-50%, 0);
+	
+	/*Sets a border*/
+	border: 0.125vmin solid var(--border-color);
+	
+	/*Sets a background color*/
+	background: var(--text-background-color);
+	
+	/*Sets size and padding*/
+	width: 95%;
+	height: 20%;
+	padding: 0.5rem;
+	
+	/*Makes text scrollable*/
+	overflow: auto;
+	word-break: break-word;
+	
+	/*Positioning in container*/
+	margin: auto;
+	position: absolute;
+	bottom: 2%;
+	left: 50%;
+	transform: translate(-50%, 0);
 }
+
 
 #optionsbox{
-    color: blue;
+	color:blue;
 }
 
 #optionsbox > div:hover{
-    color: red;
-    cursor: pointer;
+	color:red;
+	cursor:pointer;
 }
 
-#spritebox {
-    /*Sets size*/
-    max-width: 45%;
+#spritebox{
+	
+	/*Sets size*/
+	max-width: 45%;
+	
+	/*Positioning in container*/
+	z-index: -1;
+	position: absolute;
+	bottom: 20%; 
+}
 
-    /* Positioning in container*/
-    z-index: -1;
-    position: absolute;
-    bottom: 20%;
+.rightalign{
+	/*Right alignment class for the sprite*/
+	right: -7%;
+	bottom:-5%;
+}
+
+.leftalign{
+	/*Left alignment class for the sprite*/
+	left: 5%;
+}
+
+#spritebox img{
+	
+	/*Ensures that image doesn't exceed box size*/
+	max-width:100%;
+}
+
+#namebox{
+	
+	/*Sets background color, padding, and border*/
+	background: var(--text-background-color);
+    padding: 0.5rem;
+    border: 0.125vmin solid var(--border-color);
+	
+	/*Positions it in the container*/
+	position: absolute;
+    bottom: 26.5%;
+	left: 1.5%;
 }
